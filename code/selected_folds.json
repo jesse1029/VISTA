@@ -1,0 +1,65 @@
+{
+  "task": "original 2021 VISTA",
+  "data_hashes": {
+    "desis": "85ac21e38fb990a75714f90be0d2ced643275adf4e46570f326e765709c48ccc",
+    "prisma": "0c6ef3dff0e5eff1c3e9ebb349494465d4459ee189c2aeb089af4e7622822647"
+  },
+  "folds": [
+    {
+      "fold": 0,
+      "stage1": {
+        "decoder_alpha": 0.1,
+        "global_alpha": 1e-06
+      },
+      "original": {
+        "residual_alpha": 0.01,
+        "scale": 0.75
+      }
+    },
+    {
+      "fold": 1,
+      "stage1": {
+        "decoder_alpha": 0.1,
+        "global_alpha": 0.01
+      },
+      "original": {
+        "residual_alpha": 1.0,
+        "scale": 0.75
+      }
+    },
+    {
+      "fold": 2,
+      "stage1": {
+        "decoder_alpha": 0.1,
+        "global_alpha": 1e-06
+      },
+      "original": {
+        "residual_alpha": 1e-06,
+        "scale": 0.75
+      }
+    },
+    {
+      "fold": 3,
+      "stage1": {
+        "decoder_alpha": 0.1,
+        "global_alpha": 0.0001
+      },
+      "original": {
+        "residual_alpha": 1e-06,
+        "scale": 0.25
+      }
+    },
+    {
+      "fold": 4,
+      "stage1": {
+        "decoder_alpha": 0.1,
+        "global_alpha": 1e-06
+      },
+      "original": {
+        "residual_alpha": 1e-06,
+        "scale": 0.75
+      }
+    }
+  ],
+  "test_reselection": false
+}

@@ -1,0 +1,1982 @@
+{
+  "families": {
+    "full_ridge": {
+      "params": {
+        "alpha": 1.0
+      },
+      "validation": {
+        "commit_rate": 1.0,
+        "f1": 0.9358907657880089,
+        "label_change_count": 333,
+        "rmse": 1.581155884741533,
+        "sam": 0.032568784893770165,
+        "union_count": 664
+      },
+      "validation_grid": [
+        {
+          "commit_rate": 1.0,
+          "f1": 0.9358907657880089,
+          "label_change_count": 333,
+          "params": {
+            "alpha": 1.0
+          },
+          "rmse": 1.581155884741533,
+          "sam": 0.032568784893770165,
+          "union_count": 664
+        },
+        {
+          "commit_rate": 1.0,
+          "f1": 0.9345545617788295,
+          "label_change_count": 334,
+          "params": {
+            "alpha": 0.01
+          },
+          "rmse": 1.5886947325907153,
+          "sam": 0.03262964497320614,
+          "union_count": 669
+        },
+        {
+          "commit_rate": 1.0,
+          "f1": 0.9345545617788295,
+          "label_change_count": 334,
+          "params": {
+            "alpha": 0.0001
+          },
+          "rmse": 1.5888005522059558,
+          "sam": 0.032630621799286774,
+          "union_count": 669
+        },
+        {
+          "commit_rate": 1.0,
+          "f1": 0.9345545617788295,
+          "label_change_count": 334,
+          "params": {
+            "alpha": 1e-06
+          },
+          "rmse": 1.588801615853321,
+          "sam": 0.03263063164178349,
+          "union_count": 669
+        },
+        {
+          "commit_rate": 1.0,
+          "f1": 0.9345545617788295,
+          "label_change_count": 334,
+          "params": {
+            "alpha": 1e-08
+          },
+          "rmse": 1.588801626490472,
+          "sam": 0.03263063174022005,
+          "union_count": 669
+        },
+        {
+          "commit_rate": 1.0,
+          "f1": 0.9345545617788295,
+          "label_change_count": 334,
+          "params": {
+            "alpha": 1e-10
+          },
+          "rmse": 1.5888016265967329,
+          "sam": 0.032630631741201774,
+          "union_count": 669
+        },
+        {
+          "commit_rate": 1.0,
+          "f1": 0.9006039446811153,
+          "label_change_count": 333,
+          "params": {
+            "alpha": 100.0
+          },
+          "rmse": 1.523842064069178,
+          "sam": 0.032384012186210474,
+          "union_count": 570
+        },
+        {
+          "commit_rate": 1.0,
+          "f1": 0.48423257682564713,
+          "label_change_count": 339,
+          "params": {
+            "alpha": 10000.0
+          },
+          "rmse": 1.5645310472943805,
+          "sam": 0.03314557306284583,
+          "union_count": 164
+        },
+        {
+          "commit_rate": 1.0,
+          "f1": 0.29571326748803584,
+          "label_change_count": 379,
+          "params": {
+            "alpha": 1000000.0
+          },
+          "rmse": 1.7889415489733043,
+          "sam": 0.04171280909740609,
+          "union_count": 914
+        }
+      ]
+    },
+    "gated_pds_full": {
+      "params": {
+        "ridge_alpha": 0.01,
+        "scale": 1.0,
+        "window": 11
+      },
+      "validation": {
+        "commit_rate": 0.7190650779101742,
+        "f1": 0.4703754409243417,
+        "label_change_count": 0,
+        "rmse": 1.648679093037085,
+        "sam": 0.036485532230400505,
+        "union_count": 136
+      },
+      "validation_grid": [
+        {
+          "commit_rate": 0.7190650779101742,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "ridge_alpha": 0.01,
+            "scale": 1.0,
+            "window": 11
+          },
+          "rmse": 1.648679093037085,
+          "sam": 0.036485532230400505,
+          "union_count": 136
+        },
+        {
+          "commit_rate": 0.7465627864344638,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "ridge_alpha": 0.01,
+            "scale": 1.0,
+            "window": 41
+          },
+          "rmse": 1.648745529241691,
+          "sam": 0.03685236276522105,
+          "union_count": 433
+        },
+        {
+          "commit_rate": 0.618698441796517,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "ridge_alpha": 0.01,
+            "scale": 1.0,
+            "window": 21
+          },
+          "rmse": 1.6577293161700384,
+          "sam": 0.037476196743566184,
+          "union_count": 268
+        },
+        {
+          "commit_rate": 0.7089825847846013,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "ridge_alpha": 0.01,
+            "scale": 1.0,
+            "window": 15
+          },
+          "rmse": 1.6607123847789957,
+          "sam": 0.03720219418023203,
+          "union_count": 237
+        },
+        {
+          "commit_rate": 0.6924839596700275,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "ridge_alpha": 0.01,
+            "scale": 1.0,
+            "window": 7
+          },
+          "rmse": 1.6608257084121092,
+          "sam": 0.03687570694272769,
+          "union_count": 76
+        },
+        {
+          "commit_rate": 0.7254812098991751,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "ridge_alpha": 0.01,
+            "scale": 1.0,
+            "window": 31
+          },
+          "rmse": 1.6636079739735692,
+          "sam": 0.03753436661168226,
+          "union_count": 360
+        },
+        {
+          "commit_rate": 0.6626947754353804,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "ridge_alpha": 0.01,
+            "scale": 1.0,
+            "window": 3
+          },
+          "rmse": 1.664075412565249,
+          "sam": 0.037149380896825894,
+          "union_count": 0
+        },
+        {
+          "commit_rate": 0.999083409715857,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "ridge_alpha": 0.01,
+            "scale": 1.0,
+            "window": 1
+          },
+          "rmse": 1.6842341752329522,
+          "sam": 0.038008867075368526,
+          "union_count": 0
+        }
+      ]
+    },
+    "gated_pds_partial": {
+      "params": {
+        "ridge_alpha": 0.01,
+        "scale": 0.5,
+        "window": 41
+      },
+      "validation": {
+        "commit_rate": 0.8519706691109075,
+        "f1": 0.4703754409243417,
+        "label_change_count": 0,
+        "rmse": 1.612046973519136,
+        "sam": 0.03545087840800416,
+        "union_count": 186
+      },
+      "validation_grid": [
+        {
+          "commit_rate": 0.8519706691109075,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "ridge_alpha": 0.01,
+            "scale": 0.5,
+            "window": 41
+          },
+          "rmse": 1.612046973519136,
+          "sam": 0.03545087840800416,
+          "union_count": 186
+        },
+        {
+          "commit_rate": 0.7956003666361137,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "ridge_alpha": 0.01,
+            "scale": 0.75,
+            "window": 41
+          },
+          "rmse": 1.6191839564232011,
+          "sam": 0.03574415138476835,
+          "union_count": 317
+        },
+        {
+          "commit_rate": 0.8551787351054079,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "ridge_alpha": 0.01,
+            "scale": 0.5,
+            "window": 31
+          },
+          "rmse": 1.6213341662461858,
+          "sam": 0.035870696835627776,
+          "union_count": 145
+        },
+        {
+          "commit_rate": 0.9202566452795601,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "ridge_alpha": 0.01,
+            "scale": 0.25,
+            "window": 41
+          },
+          "rmse": 1.6292860080751355,
+          "sam": 0.03612103664990377,
+          "union_count": 28
+        },
+        {
+          "commit_rate": 0.7928505957836847,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "ridge_alpha": 0.01,
+            "scale": 0.75,
+            "window": 31
+          },
+          "rmse": 1.6352909630543615,
+          "sam": 0.036452318513778476,
+          "union_count": 274
+        },
+        {
+          "commit_rate": 0.7795600366636114,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "ridge_alpha": 0.01,
+            "scale": 0.5,
+            "window": 21
+          },
+          "rmse": 1.6369201522246537,
+          "sam": 0.0362556297393612,
+          "union_count": 110
+        },
+        {
+          "commit_rate": 0.9436296975252062,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "ridge_alpha": 0.01,
+            "scale": 0.25,
+            "window": 31
+          },
+          "rmse": 1.6379539166808774,
+          "sam": 0.03630918790268916,
+          "union_count": 18
+        },
+        {
+          "commit_rate": 0.6851512373968836,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "ridge_alpha": 0.01,
+            "scale": 0.75,
+            "window": 21
+          },
+          "rmse": 1.6404001211300956,
+          "sam": 0.03662161055923416,
+          "union_count": 209
+        },
+        {
+          "commit_rate": 0.7937671860678277,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "ridge_alpha": 0.01,
+            "scale": 0.75,
+            "window": 11
+          },
+          "rmse": 1.6426041478933333,
+          "sam": 0.03596762174718672,
+          "union_count": 79
+        },
+        {
+          "commit_rate": 0.8295142071494043,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "ridge_alpha": 0.01,
+            "scale": 0.5,
+            "window": 15
+          },
+          "rmse": 1.6427400354583552,
+          "sam": 0.03610096444723308,
+          "union_count": 55
+        },
+        {
+          "commit_rate": 0.8625114573785518,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "ridge_alpha": 0.01,
+            "scale": 0.5,
+            "window": 11
+          },
+          "rmse": 1.6436515369245777,
+          "sam": 0.035941196587917675,
+          "union_count": 17
+        },
+        {
+          "commit_rate": 0.7671860678276811,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "ridge_alpha": 0.01,
+            "scale": 0.75,
+            "window": 15
+          },
+          "rmse": 1.6473978625427108,
+          "sam": 0.03637979252531229,
+          "union_count": 155
+        },
+        {
+          "commit_rate": 0.8973418881759854,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "ridge_alpha": 0.01,
+            "scale": 0.25,
+            "window": 21
+          },
+          "rmse": 1.6488930335762297,
+          "sam": 0.036567724196301055,
+          "union_count": 7
+        },
+        {
+          "commit_rate": 0.8391384051329056,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "ridge_alpha": 0.01,
+            "scale": 0.5,
+            "window": 7
+          },
+          "rmse": 1.6527860055170882,
+          "sam": 0.03627515007374709,
+          "union_count": 3
+        },
+        {
+          "commit_rate": 0.7584784601283227,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "ridge_alpha": 0.01,
+            "scale": 0.75,
+            "window": 7
+          },
+          "rmse": 1.6537775588976067,
+          "sam": 0.036405589483435113,
+          "union_count": 29
+        },
+        {
+          "commit_rate": 0.919340054995417,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "ridge_alpha": 0.01,
+            "scale": 0.25,
+            "window": 15
+          },
+          "rmse": 1.6538742622647467,
+          "sam": 0.03654733412402635,
+          "union_count": 0
+        },
+        {
+          "commit_rate": 0.9248395967002749,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "ridge_alpha": 0.01,
+            "scale": 0.25,
+            "window": 11
+          },
+          "rmse": 1.6563198430501078,
+          "sam": 0.03656190112051171,
+          "union_count": 0
+        },
+        {
+          "commit_rate": 0.9615032080659945,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "ridge_alpha": 0.01,
+            "scale": 0.1,
+            "window": 41
+          },
+          "rmse": 1.6569163597145564,
+          "sam": 0.037100513171089027,
+          "union_count": 0
+        },
+        {
+          "commit_rate": 0.7296058661778185,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "ridge_alpha": 0.01,
+            "scale": 0.75,
+            "window": 3
+          },
+          "rmse": 1.6614831477734027,
+          "sam": 0.03690926529381381,
+          "union_count": 0
+        },
+        {
+          "commit_rate": 0.9793767186067828,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "ridge_alpha": 0.01,
+            "scale": 0.1,
+            "window": 31
+          },
+          "rmse": 1.6617043720581288,
+          "sam": 0.03715402681153032,
+          "union_count": 0
+        },
+        {
+          "commit_rate": 0.9092575618698442,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "ridge_alpha": 0.01,
+            "scale": 0.25,
+            "window": 7
+          },
+          "rmse": 1.6623310461729308,
+          "sam": 0.03676578763541834,
+          "union_count": 0
+        },
+        {
+          "commit_rate": 0.8047662694775435,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "ridge_alpha": 0.01,
+            "scale": 0.5,
+            "window": 3
+          },
+          "rmse": 1.662580889794639,
+          "sam": 0.0368935528255725,
+          "union_count": 0
+        },
+        {
+          "commit_rate": 0.9633363886342805,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "ridge_alpha": 0.01,
+            "scale": 0.1,
+            "window": 21
+          },
+          "rmse": 1.6669269607707293,
+          "sam": 0.03726969311291982,
+          "union_count": 0
+        },
+        {
+          "commit_rate": 0.9101741521539871,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "ridge_alpha": 0.01,
+            "scale": 0.25,
+            "window": 3
+          },
+          "rmse": 1.6690190408547505,
+          "sam": 0.03716248010834181,
+          "union_count": 0
+        },
+        {
+          "commit_rate": 0.964711274060495,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "ridge_alpha": 0.01,
+            "scale": 0.1,
+            "window": 15
+          },
+          "rmse": 1.6697902059708745,
+          "sam": 0.037295138695749186,
+          "union_count": 0
+        },
+        {
+          "commit_rate": 0.9729605866177818,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "ridge_alpha": 0.01,
+            "scale": 0.1,
+            "window": 11
+          },
+          "rmse": 1.6711990003623873,
+          "sam": 0.03731722927837607,
+          "union_count": 0
+        },
+        {
+          "commit_rate": 0.964711274060495,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "ridge_alpha": 0.01,
+            "scale": 0.1,
+            "window": 7
+          },
+          "rmse": 1.67388019843943,
+          "sam": 0.03741273791375915,
+          "union_count": 0
+        },
+        {
+          "commit_rate": 0.9670027497708524,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "ridge_alpha": 0.01,
+            "scale": 0.1,
+            "window": 3
+          },
+          "rmse": 1.6769453870556388,
+          "sam": 0.03759288874486914,
+          "union_count": 0
+        },
+        {
+          "commit_rate": 0.9995417048579285,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "ridge_alpha": 0.01,
+            "scale": 0.75,
+            "window": 1
+          },
+          "rmse": 1.6842779516181356,
+          "sam": 0.03800973085510725,
+          "union_count": 0
+        },
+        {
+          "commit_rate": 0.9995417048579285,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "ridge_alpha": 0.01,
+            "scale": 0.5,
+            "window": 1
+          },
+          "rmse": 1.6843213194986981,
+          "sam": 0.038010599687505864,
+          "union_count": 0
+        },
+        {
+          "commit_rate": 0.9995417048579285,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "ridge_alpha": 0.01,
+            "scale": 0.25,
+            "window": 1
+          },
+          "rmse": 1.6843648993200464,
+          "sam": 0.038011479734864025,
+          "union_count": 0
+        },
+        {
+          "commit_rate": 1.0,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "ridge_alpha": 0.01,
+            "scale": 0.1,
+            "window": 1
+          },
+          "rmse": 1.6843911227765327,
+          "sam": 0.03801201201510966,
+          "union_count": 0
+        }
+      ]
+    },
+    "gated_ridge_full": {
+      "params": {
+        "alpha": 100.0,
+        "scale": 1.0
+      },
+      "validation": {
+        "commit_rate": 0.8473877176901925,
+        "f1": 0.4703754409243417,
+        "label_change_count": 0,
+        "rmse": 1.5665863150565122,
+        "sam": 0.0329505991246609,
+        "union_count": 449
+      },
+      "validation_grid": [
+        {
+          "commit_rate": 0.8473877176901925,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "alpha": 100.0,
+            "scale": 1.0
+          },
+          "rmse": 1.5665863150565122,
+          "sam": 0.0329505991246609,
+          "union_count": 449
+        },
+        {
+          "commit_rate": 0.8446379468377635,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "alpha": 10000.0,
+            "scale": 1.0
+          },
+          "rmse": 1.583672889458015,
+          "sam": 0.033817467205768385,
+          "union_count": 38
+        },
+        {
+          "commit_rate": 0.8473877176901925,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "alpha": 1.0,
+            "scale": 1.0
+          },
+          "rmse": 1.6044813738067987,
+          "sam": 0.03288301639666973,
+          "union_count": 522
+        },
+        {
+          "commit_rate": 0.846929422548121,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "alpha": 0.01,
+            "scale": 1.0
+          },
+          "rmse": 1.6084391521322015,
+          "sam": 0.032931305870857776,
+          "union_count": 523
+        },
+        {
+          "commit_rate": 0.846929422548121,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "alpha": 0.0001,
+            "scale": 1.0
+          },
+          "rmse": 1.6085162112442117,
+          "sam": 0.03293196661062965,
+          "union_count": 523
+        },
+        {
+          "commit_rate": 0.846929422548121,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "alpha": 1e-06,
+            "scale": 1.0
+          },
+          "rmse": 1.6085169858543342,
+          "sam": 0.032931973269290336,
+          "union_count": 523
+        },
+        {
+          "commit_rate": 0.846929422548121,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "alpha": 1e-08,
+            "scale": 1.0
+          },
+          "rmse": 1.6085169936008452,
+          "sam": 0.032931973335885954,
+          "union_count": 523
+        },
+        {
+          "commit_rate": 0.846929422548121,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "alpha": 1e-10,
+            "scale": 1.0
+          },
+          "rmse": 1.6085169936781756,
+          "sam": 0.03293197333654937,
+          "union_count": 523
+        },
+        {
+          "commit_rate": 0.8263061411549038,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "alpha": 1000000.0,
+            "scale": 1.0
+          },
+          "rmse": 1.7753438083380586,
+          "sam": 0.040929848422879306,
+          "union_count": 599
+        }
+      ]
+    },
+    "gated_ridge_partial": {
+      "params": {
+        "alpha": 100.0,
+        "scale": 0.75
+      },
+      "validation": {
+        "commit_rate": 0.8648029330889092,
+        "f1": 0.4703754409243417,
+        "label_change_count": 0,
+        "rmse": 1.5568872994433274,
+        "sam": 0.033191335300779314,
+        "union_count": 322
+      },
+      "validation_grid": [
+        {
+          "commit_rate": 0.8648029330889092,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "alpha": 100.0,
+            "scale": 0.75
+          },
+          "rmse": 1.5568872994433274,
+          "sam": 0.033191335300779314,
+          "union_count": 322
+        },
+        {
+          "commit_rate": 0.8932172318973419,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "alpha": 100.0,
+            "scale": 0.5
+          },
+          "rmse": 1.5684113271625,
+          "sam": 0.034090620359983594,
+          "union_count": 200
+        },
+        {
+          "commit_rate": 0.8606782768102658,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "alpha": 1.0,
+            "scale": 0.75
+          },
+          "rmse": 1.5752473286192998,
+          "sam": 0.03292522798371362,
+          "union_count": 416
+        },
+        {
+          "commit_rate": 0.888634280476627,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "alpha": 1.0,
+            "scale": 0.5
+          },
+          "rmse": 1.577361234626926,
+          "sam": 0.03394922168880398,
+          "union_count": 267
+        },
+        {
+          "commit_rate": 0.888634280476627,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "alpha": 0.0001,
+            "scale": 0.5
+          },
+          "rmse": 1.5779391225289177,
+          "sam": 0.0338989323589525,
+          "union_count": 275
+        },
+        {
+          "commit_rate": 0.888634280476627,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "alpha": 1e-06,
+            "scale": 0.5
+          },
+          "rmse": 1.5779393308103438,
+          "sam": 0.033898932989726585,
+          "union_count": 275
+        },
+        {
+          "commit_rate": 0.888634280476627,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "alpha": 1e-08,
+            "scale": 0.5
+          },
+          "rmse": 1.5779393328932012,
+          "sam": 0.03389893299603673,
+          "union_count": 275
+        },
+        {
+          "commit_rate": 0.888634280476627,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "alpha": 1e-10,
+            "scale": 0.5
+          },
+          "rmse": 1.5779393329139875,
+          "sam": 0.03389893299609934,
+          "union_count": 275
+        },
+        {
+          "commit_rate": 0.888634280476627,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "alpha": 0.01,
+            "scale": 0.5
+          },
+          "rmse": 1.5786192954946874,
+          "sam": 0.03391576025937072,
+          "union_count": 276
+        },
+        {
+          "commit_rate": 0.8602199816681944,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "alpha": 0.01,
+            "scale": 0.75
+          },
+          "rmse": 1.5791812832651821,
+          "sam": 0.03295504991597881,
+          "union_count": 417
+        },
+        {
+          "commit_rate": 0.8602199816681944,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "alpha": 0.0001,
+            "scale": 0.75
+          },
+          "rmse": 1.5792257139985588,
+          "sam": 0.03295530497367449,
+          "union_count": 417
+        },
+        {
+          "commit_rate": 0.8602199816681944,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "alpha": 1e-06,
+            "scale": 0.75
+          },
+          "rmse": 1.5792261605717106,
+          "sam": 0.03295530755393754,
+          "union_count": 417
+        },
+        {
+          "commit_rate": 0.8602199816681944,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "alpha": 1e-08,
+            "scale": 0.75
+          },
+          "rmse": 1.5792261650376413,
+          "sam": 0.03295530757974537,
+          "union_count": 417
+        },
+        {
+          "commit_rate": 0.8602199816681944,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "alpha": 1e-10,
+            "scale": 0.75
+          },
+          "rmse": 1.5792261650822235,
+          "sam": 0.032955307580002105,
+          "union_count": 417
+        },
+        {
+          "commit_rate": 0.8748854262144822,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "alpha": 10000.0,
+            "scale": 0.75
+          },
+          "rmse": 1.5964158458835802,
+          "sam": 0.03432657355013799,
+          "union_count": 8
+        },
+        {
+          "commit_rate": 0.9541704857928506,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "alpha": 100.0,
+            "scale": 0.25
+          },
+          "rmse": 1.608387591773458,
+          "sam": 0.035683094635542874,
+          "union_count": 36
+        },
+        {
+          "commit_rate": 0.9523373052245646,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "alpha": 1.0,
+            "scale": 0.25
+          },
+          "rmse": 1.610261203911478,
+          "sam": 0.03554617633447844,
+          "union_count": 96
+        },
+        {
+          "commit_rate": 0.9523373052245646,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "alpha": 0.01,
+            "scale": 0.25
+          },
+          "rmse": 1.6108424377215724,
+          "sam": 0.035539558076942125,
+          "union_count": 104
+        },
+        {
+          "commit_rate": 0.9523373052245646,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "alpha": 0.0001,
+            "scale": 0.25
+          },
+          "rmse": 1.6108499538250614,
+          "sam": 0.03553950227194747,
+          "union_count": 104
+        },
+        {
+          "commit_rate": 0.9523373052245646,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "alpha": 1e-06,
+            "scale": 0.25
+          },
+          "rmse": 1.610850029245458,
+          "sam": 0.03553950171881629,
+          "union_count": 104
+        },
+        {
+          "commit_rate": 0.9523373052245646,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "alpha": 1e-08,
+            "scale": 0.25
+          },
+          "rmse": 1.6108500299996726,
+          "sam": 0.035539501713285446,
+          "union_count": 104
+        },
+        {
+          "commit_rate": 0.9523373052245646,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "alpha": 1e-10,
+            "scale": 0.25
+          },
+          "rmse": 1.6108500300072097,
+          "sam": 0.035539501713229824,
+          "union_count": 104
+        },
+        {
+          "commit_rate": 0.9161319890009166,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "alpha": 10000.0,
+            "scale": 0.5
+          },
+          "rmse": 1.6162668526271948,
+          "sam": 0.035138152230477,
+          "union_count": 1
+        },
+        {
+          "commit_rate": 0.9683776351970669,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "alpha": 10000.0,
+            "scale": 0.25
+          },
+          "rmse": 1.6449693955473752,
+          "sam": 0.036320500041535274,
+          "union_count": 0
+        },
+        {
+          "commit_rate": 0.9835013748854262,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "alpha": 1.0,
+            "scale": 0.1
+          },
+          "rmse": 1.6500395918163484,
+          "sam": 0.03692854372226909,
+          "union_count": 2
+        },
+        {
+          "commit_rate": 0.9830430797433547,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "alpha": 0.01,
+            "scale": 0.1
+          },
+          "rmse": 1.6500501936682443,
+          "sam": 0.03692615042991994,
+          "union_count": 1
+        },
+        {
+          "commit_rate": 0.9830430797433547,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "alpha": 0.0001,
+            "scale": 0.1
+          },
+          "rmse": 1.6500517772235206,
+          "sam": 0.03692611356435547,
+          "union_count": 1
+        },
+        {
+          "commit_rate": 0.9830430797433547,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "alpha": 1e-06,
+            "scale": 0.1
+          },
+          "rmse": 1.6500517930915404,
+          "sam": 0.0369261131972224,
+          "union_count": 1
+        },
+        {
+          "commit_rate": 0.9830430797433547,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "alpha": 1e-08,
+            "scale": 0.1
+          },
+          "rmse": 1.6500517932502157,
+          "sam": 0.03692611319355128,
+          "union_count": 1
+        },
+        {
+          "commit_rate": 0.9830430797433547,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "alpha": 1e-10,
+            "scale": 0.1
+          },
+          "rmse": 1.650051793251801,
+          "sam": 0.03692611319351477,
+          "union_count": 1
+        },
+        {
+          "commit_rate": 0.9844179651695693,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "alpha": 100.0,
+            "scale": 0.1
+          },
+          "rmse": 1.6502557070871584,
+          "sam": 0.036990444908441014,
+          "union_count": 0
+        },
+        {
+          "commit_rate": 0.9862511457378552,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "alpha": 10000.0,
+            "scale": 0.1
+          },
+          "rmse": 1.6674361101818014,
+          "sam": 0.037286252476664936,
+          "union_count": 0
+        },
+        {
+          "commit_rate": 0.9802933088909258,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "alpha": 1000000.0,
+            "scale": 0.1
+          },
+          "rmse": 1.6838540609177945,
+          "sam": 0.037799005036142495,
+          "union_count": 0
+        },
+        {
+          "commit_rate": 0.9472960586617782,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "alpha": 1000000.0,
+            "scale": 0.25
+          },
+          "rmse": 1.6879391067521017,
+          "sam": 0.03773832891710363,
+          "union_count": 2
+        },
+        {
+          "commit_rate": 0.9028414298808433,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "alpha": 1000000.0,
+            "scale": 0.5
+          },
+          "rmse": 1.7059365421273598,
+          "sam": 0.03826106518781297,
+          "union_count": 84
+        },
+        {
+          "commit_rate": 0.8689275893675527,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "alpha": 1000000.0,
+            "scale": 0.75
+          },
+          "rmse": 1.7370953628372119,
+          "sam": 0.03943623901963505,
+          "union_count": 349
+        }
+      ]
+    },
+    "logistic_full": {
+      "params": {
+        "residual_alpha": 0.0001,
+        "scale": 1.0
+      },
+      "validation": {
+        "commit_rate": 0.9468377635197067,
+        "f1": 0.4703754409243417,
+        "label_change_count": 0,
+        "rmse": 1.6534775121744698,
+        "sam": 0.03709611680031205,
+        "union_count": 69
+      },
+      "validation_grid": [
+        {
+          "commit_rate": 0.9468377635197067,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "residual_alpha": 0.0001,
+            "scale": 1.0
+          },
+          "rmse": 1.6534775121744698,
+          "sam": 0.03709611680031205,
+          "union_count": 69
+        },
+        {
+          "commit_rate": 0.9468377635197067,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "residual_alpha": 1e-06,
+            "scale": 1.0
+          },
+          "rmse": 1.653477588399468,
+          "sam": 0.03709611842999676,
+          "union_count": 69
+        },
+        {
+          "commit_rate": 0.9596700274977086,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "residual_alpha": 1.0,
+            "scale": 1.0
+          },
+          "rmse": 1.6535071625982978,
+          "sam": 0.03708515717350865,
+          "union_count": 66
+        },
+        {
+          "commit_rate": 0.9472960586617782,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "residual_alpha": 0.01,
+            "scale": 1.0
+          },
+          "rmse": 1.653521566573916,
+          "sam": 0.03709643662848504,
+          "union_count": 69
+        }
+      ]
+    },
+    "logistic_partial": {
+      "params": {
+        "residual_alpha": 1.0,
+        "scale": 0.75
+      },
+      "validation": {
+        "commit_rate": 0.9715857011915674,
+        "f1": 0.4703754409243417,
+        "label_change_count": 0,
+        "rmse": 1.657760143007274,
+        "sam": 0.03715544762525658,
+        "union_count": 24
+      },
+      "validation_grid": [
+        {
+          "commit_rate": 0.9715857011915674,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "residual_alpha": 1.0,
+            "scale": 0.75
+          },
+          "rmse": 1.657760143007274,
+          "sam": 0.03715544762525658,
+          "union_count": 24
+        },
+        {
+          "commit_rate": 0.9592117323556371,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "residual_alpha": 0.01,
+            "scale": 0.75
+          },
+          "rmse": 1.6580395060697704,
+          "sam": 0.03717588594800493,
+          "union_count": 22
+        },
+        {
+          "commit_rate": 0.9592117323556371,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "residual_alpha": 0.0001,
+            "scale": 0.75
+          },
+          "rmse": 1.658043520470349,
+          "sam": 0.037175898942955476,
+          "union_count": 22
+        },
+        {
+          "commit_rate": 0.9592117323556371,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "residual_alpha": 1e-06,
+            "scale": 0.75
+          },
+          "rmse": 1.6580435607498418,
+          "sam": 0.037175899078490726,
+          "union_count": 22
+        },
+        {
+          "commit_rate": 0.9697525206232814,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "residual_alpha": 0.01,
+            "scale": 0.5
+          },
+          "rmse": 1.6642900475215692,
+          "sam": 0.037343329172433576,
+          "union_count": 10
+        },
+        {
+          "commit_rate": 0.9697525206232814,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "residual_alpha": 0.0001,
+            "scale": 0.5
+          },
+          "rmse": 1.6642912740397215,
+          "sam": 0.03734324797108317,
+          "union_count": 10
+        },
+        {
+          "commit_rate": 0.9697525206232814,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "residual_alpha": 1e-06,
+            "scale": 0.5
+          },
+          "rmse": 1.6642912862979975,
+          "sam": 0.03734324715506851,
+          "union_count": 10
+        },
+        {
+          "commit_rate": 0.9784601283226397,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "residual_alpha": 1.0,
+            "scale": 0.5
+          },
+          "rmse": 1.664597525316029,
+          "sam": 0.037348342728442466,
+          "union_count": 9
+        },
+        {
+          "commit_rate": 0.9876260311640697,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "residual_alpha": 1.0,
+            "scale": 0.25
+          },
+          "rmse": 1.673478981546788,
+          "sam": 0.03763339023561077,
+          "union_count": 0
+        },
+        {
+          "commit_rate": 0.9857928505957837,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "residual_alpha": 1e-06,
+            "scale": 0.25
+          },
+          "rmse": 1.6734972296808366,
+          "sam": 0.03762823133541804,
+          "union_count": 0
+        },
+        {
+          "commit_rate": 0.9857928505957837,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "residual_alpha": 0.0001,
+            "scale": 0.25
+          },
+          "rmse": 1.673497231211255,
+          "sam": 0.037628232152873066,
+          "union_count": 0
+        },
+        {
+          "commit_rate": 0.9857928505957837,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "residual_alpha": 0.01,
+            "scale": 0.25
+          },
+          "rmse": 1.6734973784234948,
+          "sam": 0.037628313320099464,
+          "union_count": 0
+        },
+        {
+          "commit_rate": 0.9931255728689276,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "residual_alpha": 1e-06,
+            "scale": 0.1
+          },
+          "rmse": 1.6797693548720998,
+          "sam": 0.037846434177336595,
+          "union_count": 0
+        },
+        {
+          "commit_rate": 0.9931255728689276,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "residual_alpha": 0.0001,
+            "scale": 0.1
+          },
+          "rmse": 1.679769357267535,
+          "sam": 0.03784643461251671,
+          "union_count": 0
+        },
+        {
+          "commit_rate": 0.9931255728689276,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "residual_alpha": 0.01,
+            "scale": 0.1
+          },
+          "rmse": 1.6797695931566352,
+          "sam": 0.03784647780619395,
+          "union_count": 0
+        },
+        {
+          "commit_rate": 0.9945004582951421,
+          "f1": 0.4703754409243417,
+          "label_change_count": 0,
+          "params": {
+            "residual_alpha": 1.0,
+            "scale": 0.1
+          },
+          "rmse": 1.6797740236995449,
+          "sam": 0.03784871967511504,
+          "union_count": 0
+        }
+      ]
+    },
+    "pds": {
+      "params": {
+        "ridge_alpha": 0.01,
+        "window": 11
+      },
+      "validation": {
+        "commit_rate": 1.0,
+        "f1": 0.5750604820245245,
+        "label_change_count": 613,
+        "rmse": 1.6509161389579794,
+        "sam": 0.03637591045199384,
+        "union_count": 542
+      },
+      "validation_grid": [
+        {
+          "commit_rate": 1.0,
+          "f1": 0.6600732530444189,
+          "label_change_count": 553,
+          "params": {
+            "ridge_alpha": 0.01,
+            "window": 41
+          },
+          "rmse": 1.624069558069695,
+          "sam": 0.03725557030631996,
+          "union_count": 769
+        },
+        {
+          "commit_rate": 1.0,
+          "f1": 0.5750604820245245,
+          "label_change_count": 613,
+          "params": {
+            "ridge_alpha": 0.01,
+            "window": 11
+          },
+          "rmse": 1.6509161389579794,
+          "sam": 0.03637591045199384,
+          "union_count": 542
+        },
+        {
+          "commit_rate": 1.0,
+          "f1": 0.559804128201252,
+          "label_change_count": 736,
+          "params": {
+            "ridge_alpha": 0.01,
+            "window": 3
+          },
+          "rmse": 1.6551430585892688,
+          "sam": 0.036532867710702674,
+          "union_count": 400
+        },
+        {
+          "commit_rate": 1.0,
+          "f1": 0.5358313031574763,
+          "label_change_count": 635,
+          "params": {
+            "ridge_alpha": 0.01,
+            "window": 15
+          },
+          "rmse": 1.6611079788229055,
+          "sam": 0.03720557209004417,
+          "union_count": 698
+        },
+        {
+          "commit_rate": 1.0,
+          "f1": 0.5089727299629733,
+          "label_change_count": 671,
+          "params": {
+            "ridge_alpha": 0.01,
+            "window": 7
+          },
+          "rmse": 1.6529309354957207,
+          "sam": 0.03621026446278717,
+          "union_count": 512
+        },
+        {
+          "commit_rate": 1.0,
+          "f1": 0.47008093390418565,
+          "label_change_count": 2,
+          "params": {
+            "ridge_alpha": 0.01,
+            "window": 1
+          },
+          "rmse": 1.6842345364526679,
+          "sam": 0.03800886202301949,
+          "union_count": 1
+        },
+        {
+          "commit_rate": 1.0,
+          "f1": 0.4555925647421004,
+          "label_change_count": 599,
+          "params": {
+            "ridge_alpha": 0.01,
+            "window": 31
+          },
+          "rmse": 1.6554565707436013,
+          "sam": 0.03825404951354198,
+          "union_count": 760
+        },
+        {
+          "commit_rate": 1.0,
+          "f1": 0.43713180045014655,
+          "label_change_count": 832,
+          "params": {
+            "ridge_alpha": 0.01,
+            "window": 21
+          },
+          "rmse": 1.6691667608829273,
+          "sam": 0.038392304562969055,
+          "union_count": 957
+        }
+      ]
+    },
+    "rf_full": {
+      "params": {
+        "residual_alpha": 1.0,
+        "scale": 1.0
+      },
+      "validation": {
+        "commit_rate": 0.9743354720439963,
+        "f1": 0.5017187329225703,
+        "label_change_count": 0,
+        "rmse": 1.6650208454855557,
+        "sam": 0.03708731847521059,
+        "union_count": 3
+      },
+      "validation_grid": [
+        {
+          "commit_rate": 0.9743354720439963,
+          "f1": 0.5017187329225703,
+          "label_change_count": 0,
+          "params": {
+            "residual_alpha": 1.0,
+            "scale": 1.0
+          },
+          "rmse": 1.6650208454855557,
+          "sam": 0.03708731847521059,
+          "union_count": 3
+        },
+        {
+          "commit_rate": 0.9743354720439963,
+          "f1": 0.5017187329225703,
+          "label_change_count": 0,
+          "params": {
+            "residual_alpha": 1e-06,
+            "scale": 1.0
+          },
+          "rmse": 1.665045652238561,
+          "sam": 0.03707326271198568,
+          "union_count": 3
+        },
+        {
+          "commit_rate": 0.9743354720439963,
+          "f1": 0.5017187329225703,
+          "label_change_count": 0,
+          "params": {
+            "residual_alpha": 0.0001,
+            "scale": 1.0
+          },
+          "rmse": 1.665045669862218,
+          "sam": 0.037073265036414234,
+          "union_count": 3
+        },
+        {
+          "commit_rate": 0.9743354720439963,
+          "f1": 0.5017187329225703,
+          "label_change_count": 0,
+          "params": {
+            "residual_alpha": 0.01,
+            "scale": 1.0
+          },
+          "rmse": 1.6650474130898756,
+          "sam": 0.03707349593577774,
+          "union_count": 3
+        }
+      ]
+    },
+    "rf_partial": {
+      "params": {
+        "residual_alpha": 0.01,
+        "scale": 0.75
+      },
+      "validation": {
+        "commit_rate": 0.9798350137488543,
+        "f1": 0.5017187329225703,
+        "label_change_count": 0,
+        "rmse": 1.668072721310155,
+        "sam": 0.037245054124248396,
+        "union_count": 0
+      },
+      "validation_grid": [
+        {
+          "commit_rate": 0.9798350137488543,
+          "f1": 0.5017187329225703,
+          "label_change_count": 0,
+          "params": {
+            "residual_alpha": 0.01,
+            "scale": 0.75
+          },
+          "rmse": 1.668072721310155,
+          "sam": 0.037245054124248396,
+          "union_count": 0
+        },
+        {
+          "commit_rate": 0.9793767186067828,
+          "f1": 0.5017187329225703,
+          "label_change_count": 0,
+          "params": {
+            "residual_alpha": 1e-06,
+            "scale": 0.75
+          },
+          "rmse": 1.668122370230297,
+          "sam": 0.03724601544613082,
+          "union_count": 0
+        },
+        {
+          "commit_rate": 0.9793767186067828,
+          "f1": 0.5017187329225703,
+          "label_change_count": 0,
+          "params": {
+            "residual_alpha": 0.0001,
+            "scale": 0.75
+          },
+          "rmse": 1.6681223923001172,
+          "sam": 0.03724601766532858,
+          "union_count": 0
+        },
+        {
+          "commit_rate": 0.9780018331805683,
+          "f1": 0.5017187329225703,
+          "label_change_count": 0,
+          "params": {
+            "residual_alpha": 1.0,
+            "scale": 0.75
+          },
+          "rmse": 1.6683934582733289,
+          "sam": 0.03725945610409259,
+          "union_count": 0
+        },
+        {
+          "commit_rate": 0.9853345554537122,
+          "f1": 0.5017187329225703,
+          "label_change_count": 0,
+          "params": {
+            "residual_alpha": 1e-06,
+            "scale": 0.5
+          },
+          "rmse": 1.6723209590242756,
+          "sam": 0.03745479173435364,
+          "union_count": 0
+        },
+        {
+          "commit_rate": 0.9853345554537122,
+          "f1": 0.5017187329225703,
+          "label_change_count": 0,
+          "params": {
+            "residual_alpha": 0.0001,
+            "scale": 0.5
+          },
+          "rmse": 1.6723209798644487,
+          "sam": 0.03745479355138202,
+          "union_count": 0
+        },
+        {
+          "commit_rate": 0.9853345554537122,
+          "f1": 0.5017187329225703,
+          "label_change_count": 0,
+          "params": {
+            "residual_alpha": 0.01,
+            "scale": 0.5
+          },
+          "rmse": 1.672323048099298,
+          "sam": 0.037454974101741416,
+          "union_count": 0
+        },
+        {
+          "commit_rate": 0.9857928505957837,
+          "f1": 0.5017187329225703,
+          "label_change_count": 0,
+          "params": {
+            "residual_alpha": 1.0,
+            "scale": 0.5
+          },
+          "rmse": 1.6724258180957317,
+          "sam": 0.03746640404891664,
+          "union_count": 0
+        },
+        {
+          "commit_rate": 0.9931255728689276,
+          "f1": 0.5017187329225703,
+          "label_change_count": 0,
+          "params": {
+            "residual_alpha": 1e-06,
+            "scale": 0.25
+          },
+          "rmse": 1.6777928850925004,
+          "sam": 0.037711443750742354,
+          "union_count": 0
+        },
+        {
+          "commit_rate": 0.9931255728689276,
+          "f1": 0.5017187329225703,
+          "label_change_count": 0,
+          "params": {
+            "residual_alpha": 0.0001,
+            "scale": 0.25
+          },
+          "rmse": 1.677792898423872,
+          "sam": 0.037711444823684256,
+          "union_count": 0
+        },
+        {
+          "commit_rate": 0.9931255728689276,
+          "f1": 0.5017187329225703,
+          "label_change_count": 0,
+          "params": {
+            "residual_alpha": 0.01,
+            "scale": 0.25
+          },
+          "rmse": 1.6777942220204813,
+          "sam": 0.037711551442704744,
+          "union_count": 0
+        },
+        {
+          "commit_rate": 0.9926672777268561,
+          "f1": 0.5017187329225703,
+          "label_change_count": 0,
+          "params": {
+            "residual_alpha": 1.0,
+            "scale": 0.25
+          },
+          "rmse": 1.6778419435979635,
+          "sam": 0.037718167838565755,
+          "union_count": 0
+        },
+        {
+          "commit_rate": 0.9945004582951421,
+          "f1": 0.5017187329225703,
+          "label_change_count": 0,
+          "params": {
+            "residual_alpha": 1e-06,
+            "scale": 0.1
+          },
+          "rmse": 1.6816030328985196,
+          "sam": 0.037886435364996064,
+          "union_count": 0
+        },
+        {
+          "commit_rate": 0.9945004582951421,
+          "f1": 0.5017187329225703,
+          "label_change_count": 0,
+          "params": {
+            "residual_alpha": 0.0001,
+            "scale": 0.1
+          },
+          "rmse": 1.6816030390585153,
+          "sam": 0.037886435841892586,
+          "union_count": 0
+        },
+        {
+          "commit_rate": 0.9945004582951421,
+          "f1": 0.5017187329225703,
+          "label_change_count": 0,
+          "params": {
+            "residual_alpha": 0.01,
+            "scale": 0.1
+          },
+          "rmse": 1.6816036508672094,
+          "sam": 0.03788648323137211,
+          "union_count": 0
+        },
+        {
+          "commit_rate": 0.9949587534372135,
+          "f1": 0.5017187329225703,
+          "label_change_count": 0,
+          "params": {
+            "residual_alpha": 1.0,
+            "scale": 0.1
+          },
+          "rmse": 1.681644500441889,
+          "sam": 0.037889526950381336,
+          "union_count": 0
+        }
+      ]
+    },
+    "soft_residual": {
+      "params": {
+        "residual_alpha": 0.01
+      },
+      "validation": {
+        "commit_rate": 1.0,
+        "f1": 0.47631186171807505,
+        "label_change_count": 115,
+        "rmse": 1.6562278345308674,
+        "sam": 0.03705615735710335,
+        "union_count": 130
+      },
+      "validation_grid": [
+        {
+          "commit_rate": 1.0,
+          "f1": 0.47631186171807505,
+          "label_change_count": 115,
+          "params": {
+            "residual_alpha": 0.01
+          },
+          "rmse": 1.6562278345308674,
+          "sam": 0.03705615735710335,
+          "union_count": 130
+        },
+        {
+          "commit_rate": 1.0,
+          "f1": 0.47549477835912174,
+          "label_change_count": 88,
+          "params": {
+            "residual_alpha": 1.0
+          },
+          "rmse": 1.65569491305913,
+          "sam": 0.037043853959415965,
+          "union_count": 113
+        }
+      ]
+    }
+  },
+  "fold": 1,
+  "geometry": {
+    "class_counts": {
+      "development": [
+        211,
+        3040,
+        102,
+        3315,
+        1360
+      ],
+      "test": [
+        89,
+        1348,
+        10,
+        391,
+        128
+      ],
+      "validation": [
+        22,
+        1086,
+        80,
+        782,
+        212
+      ]
+    },
+    "development": 8028,
+    "min_retained_distance": 0.020000407287112058,
+    "removed_by_buffer": 4405,
+    "test": 1966,
+    "validation": 2182
+  },
+  "stage1": {
+    "params": {
+      "decoder_alpha": 0.1,
+      "global_alpha": 0.01
+    },
+    "validation": {
+      "commit_rate": 1.0,
+      "f1": 0.4703754409243417,
+      "label_change_count": 0,
+      "rmse": 1.684408691065553,
+      "sam": 0.03801237099651077,
+      "union_count": 0
+    }
+  }
+}

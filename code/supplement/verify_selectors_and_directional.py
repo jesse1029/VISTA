@@ -1,6 +1,8 @@
 """Read-only checks of original R8 selectors, bootstrap and R5 stored outputs."""
 from pathlib import Path
 import contextlib,io,importlib.util,json,csv,hashlib,sys
+if sys.flags.optimize:
+ raise RuntimeError("Run verification without -O/-OO or PYTHONOPTIMIZE; scientific assertions must remain active")
 ROOT=Path(__file__).resolve().parent
 spec=importlib.util.spec_from_file_location("historical_replay",ROOT/"verify_historical_records.py")
 h=importlib.util.module_from_spec(spec)

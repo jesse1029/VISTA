@@ -3,6 +3,8 @@ from pathlib import Path
 import os
 os.environ["OPENBLAS_NUM_THREADS"]="1"
 import argparse,csv,hashlib,io,json,pickle,sys
+if sys.flags.optimize:
+ raise RuntimeError("Run verification without -O/-OO or PYTHONOPTIMIZE; scientific assertions must remain active")
 from datetime import datetime,timezone
 ROOT=Path(__file__).resolve().parent
 parser=argparse.ArgumentParser(description=__doc__)

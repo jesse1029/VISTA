@@ -1,0 +1,91 @@
+{
+  "bootstrap": {
+    "replicates": 1000,
+    "seed": 20260812,
+    "spatial_block_rule": "floor((longitude+180)/0.01):floor((latitude+90)/0.01)"
+  },
+  "claim_boundary": "Post-review secondary analysis on the previously opened R4 split. New model choices use development/validation only; final statistics are not independent confirmation.",
+  "final_evaluation_opened": true,
+  "input_hashes": {
+    "desis_2021.csv": "85ac21e38fb990a75714f90be0d2ced643275adf4e46570f326e765709c48ccc",
+    "desis_prisma_2021_paper_reconciled.xml": "1453cf193438e59ad61d4cdde2eb4c089c1c28c843517585f7eb47c0f4e5aa46",
+    "prisma_2021.csv": "0c6ef3dff0e5eff1c3e9ebb349494465d4459ee189c2aeb089af4e7622822647"
+  },
+  "margin_curve": {
+    "matched_coverage_sampling": "fixed SHA-256 ordering of final locations within the top-label-compatible set",
+    "thresholds": "nonnegative empirical quantiles of validation candidate-minus-global logit margin, including zero",
+    "top_label_compatibility": "candidate top class equals frozen decoder top class on global fallback"
+  },
+  "r4_decision_lock_sha256": "df8ef02e0bb3150935360562284317b20e2a13dee8650553b1455c6af2086046",
+  "r4_preregistration_sha256": "7618c6c5859cf43e84a7a158121c02872bb519c8d548331012d1c1c6a18ae04a",
+  "r4_runner_sha256": "3a14e29f063f5809d941f4b202483bb017345475164c6c10a6eba90cffd770f1",
+  "schema": "smst-review-e1e3-decision-lock-v1",
+  "selected": {
+    "diagonal_affine": {
+      "alpha": 1e-06
+    },
+    "hard_predicted_class_residual": {
+      "alpha": 1.0
+    },
+    "multivariate_ridge": {
+      "alpha": 100.0
+    },
+    "pds": {
+      "window": 11
+    },
+    "pls": {
+      "components": 5
+    },
+    "r4_smt_candidate": {
+      "margin": 0.0,
+      "model_key": "g=1e-02|d=1e-01|r=1e-04"
+    },
+    "soft_decoder_weighted_residual": {
+      "alpha": 1.0
+    },
+    "unconditional_residual": {
+      "alpha": 1e-06
+    },
+    "unsupervised_cluster_residual": {
+      "alpha": 1.0,
+      "clusters": 7
+    }
+  },
+  "selection_grid": {
+    "cluster_count": [
+      3,
+      5,
+      7
+    ],
+    "diagonal_affine_alpha": [
+      1e-06,
+      0.0001,
+      0.01,
+      1.0
+    ],
+    "multivariate_ridge_alpha": [
+      0.0001,
+      0.01,
+      1.0,
+      100.0
+    ],
+    "pds_window": [
+      3,
+      7,
+      11
+    ],
+    "pls_components": [
+      2,
+      5,
+      10,
+      20
+    ],
+    "residual_alpha": [
+      1e-06,
+      0.0001,
+      0.01,
+      1.0
+    ]
+  },
+  "selection_rule": "minimum validation spectral RMSE; ties resolved by canonical JSON parameter string"
+}

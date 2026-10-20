@@ -1,0 +1,40 @@
+candidate,params,validation_rmse
+diagonal_affine,"{""alpha"": 1e-06}",1.7766695271433601
+diagonal_affine,"{""alpha"": 0.0001}",1.7766726120770593
+diagonal_affine,"{""alpha"": 0.01}",1.7769822596314238
+diagonal_affine,"{""alpha"": 1.0}",1.813508373710094
+multivariate_ridge,"{""alpha"": 0.0001}",1.7230685341238199
+multivariate_ridge,"{""alpha"": 0.01}",1.7229915170388574
+multivariate_ridge,"{""alpha"": 1.0}",1.7184052979949251
+multivariate_ridge,"{""alpha"": 100.0}",1.6796532890486022
+pls,"{""components"": 2}",1.7813249691193123
+pls,"{""components"": 5}",1.6425829312080238
+pls,"{""components"": 10}",1.718452800516783
+pls,"{""components"": 20}",1.7231028223160356
+pds,"{""window"": 3}",1.7284154901215028
+pds,"{""window"": 7}",1.7060943048253907
+pds,"{""window"": 11}",1.6999881234447576
+unconditional_residual,"{""alpha"": 1e-06}",1.7766694960206184
+unconditional_residual,"{""alpha"": 0.0001}",1.776669499685772
+unconditional_residual,"{""alpha"": 0.01}",1.7766698650543267
+unconditional_residual,"{""alpha"": 1.0}",1.7766985223745688
+hard_predicted_class_residual,"{""alpha"": 1e-06}",1.7823233451034175
+hard_predicted_class_residual,"{""alpha"": 0.0001}",1.7823221847807182
+hard_predicted_class_residual,"{""alpha"": 0.01}",1.7822099978899961
+hard_predicted_class_residual,"{""alpha"": 1.0}",1.7755379668799387
+soft_decoder_weighted_residual,"{""alpha"": 1e-06}",1.7403876806352048
+soft_decoder_weighted_residual,"{""alpha"": 0.0001}",1.740387225791165
+soft_decoder_weighted_residual,"{""alpha"": 0.01}",1.7403425469890779
+soft_decoder_weighted_residual,"{""alpha"": 1.0}",1.7373131888601399
+unsupervised_cluster_residual,"{""alpha"": 1e-06, ""clusters"": 3}",1.7464312322941993
+unsupervised_cluster_residual,"{""alpha"": 0.0001, ""clusters"": 3}",1.7464310019145497
+unsupervised_cluster_residual,"{""alpha"": 0.01, ""clusters"": 3}",1.7464080943104567
+unsupervised_cluster_residual,"{""alpha"": 1.0, ""clusters"": 3}",1.7448790821824207
+unsupervised_cluster_residual,"{""alpha"": 1e-06, ""clusters"": 5}",1.734910063241513
+unsupervised_cluster_residual,"{""alpha"": 0.0001, ""clusters"": 5}",1.7349093993160036
+unsupervised_cluster_residual,"{""alpha"": 0.01, ""clusters"": 5}",1.7348438913893933
+unsupervised_cluster_residual,"{""alpha"": 1.0, ""clusters"": 5}",1.7323598580509783
+unsupervised_cluster_residual,"{""alpha"": 1e-06, ""clusters"": 7}",1.7232781075099437
+unsupervised_cluster_residual,"{""alpha"": 0.0001, ""clusters"": 7}",1.7232766639685089
+unsupervised_cluster_residual,"{""alpha"": 0.01, ""clusters"": 7}",1.7231338249044195
+unsupervised_cluster_residual,"{""alpha"": 1.0, ""clusters"": 7}",1.7160940805101588

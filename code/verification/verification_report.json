@@ -1,0 +1,468 @@
+{
+  "started_utc": "2026-10-20T12:18:34.103060+00:00",
+  "python": "3.12.14",
+  "numpy": "1.26.4",
+  "pandas": "2.3.3",
+  "input_hashes": {
+    "desis_2020.csv": "2c9a126a77baada7d74d6866b204775a18b0ccfb515c42611f33a02cece6907c",
+    "desis_2021.csv": "85ac21e38fb990a75714f90be0d2ced643275adf4e46570f326e765709c48ccc",
+    "metadata_2020.xml": "89fbc0d64c2137e9eaaebfd647436a82146a5c677ca8852f2818c564ae341f22",
+    "prisma_2020.csv": "3ed9d66f082dffba937ac1a4f743d651432900fa26ca582fd7c0dc963a44071b",
+    "prisma_2021.csv": "0c6ef3dff0e5eff1c3e9ebb349494465d4459ee189c2aeb089af4e7622822647"
+  },
+  "model_fitting_performed": false,
+  "checks": {
+    "principal_model_replay": {
+      "rows": 16581,
+      "folds": [
+        {
+          "fold": 0,
+          "test_rows": 3431,
+          "maximum_spectral_difference": 1.4210854715202004e-14
+        },
+        {
+          "fold": 1,
+          "test_rows": 1966,
+          "maximum_spectral_difference": 1.4210854715202004e-14
+        },
+        {
+          "fold": 2,
+          "test_rows": 1642,
+          "maximum_spectral_difference": 1.4210854715202004e-14
+        },
+        {
+          "fold": 3,
+          "test_rows": 4574,
+          "maximum_spectral_difference": 7.105427357601002e-15
+        },
+        {
+          "fold": 4,
+          "test_rows": 4968,
+          "maximum_spectral_difference": 1.4210854715202004e-14
+        }
+      ],
+      "maximum_spectral_difference": 1.4210854715202004e-14,
+      "classifier_labels_changed": 0,
+      "adopted_rows": 15785,
+      "improved_rows": 10005,
+      "large_error_rows": 294
+    },
+    "principal_reference_classifier": {
+      "overall": {
+        "n": 16581,
+        "ref_acc": 0.8568843857427175,
+        "ref_f1": 0.7787310726725958,
+        "agree": 0.7542970870273205,
+        "changes": 796,
+        "toward": 295,
+        "away": 359,
+        "between": 142
+      },
+      "crop": {
+        "alfalfa": {
+          "n": 336,
+          "ref_acc": 0.7023809523809523,
+          "ref_f1": 0.16503496503496504,
+          "agree": 0.5357142857142857,
+          "changes": 47,
+          "toward": 8,
+          "away": 29,
+          "between": 10
+        },
+        "almonds": {
+          "n": 8646,
+          "ref_acc": 0.8964839232014804,
+          "ref_f1": 0.18908336890894678,
+          "agree": 0.8791348600508906,
+          "changes": 319,
+          "toward": 122,
+          "away": 169,
+          "between": 28
+        },
+        "corn": {
+          "n": 205,
+          "ref_acc": 0.8634146341463415,
+          "ref_f1": 0.18534031413612567,
+          "agree": 0.14146341463414633,
+          "changes": 47,
+          "toward": 1,
+          "away": 3,
+          "between": 43
+        },
+        "grapes": {
+          "n": 5329,
+          "ref_acc": 0.7614937136423344,
+          "ref_f1": 0.1729199957387877,
+          "agree": 0.774066428973541,
+          "changes": 311,
+          "toward": 117,
+          "away": 154,
+          "between": 40
+        },
+        "pistachios": {
+          "n": 2065,
+          "ref_acc": 0.9617433414043584,
+          "ref_f1": 0.19609972846210813,
+          "agree": 0.276997578692494,
+          "changes": 72,
+          "toward": 47,
+          "away": 4,
+          "between": 21
+        }
+      }
+    },
+    "classification_transitions": {
+      "full_ridge": {
+        "incorrect_to_correct": 2044,
+        "correct_to_incorrect": 1114,
+        "incorrect_class_changed": 307,
+        "classification_improved_but_rmse_increased": 830
+      },
+      "pds": {
+        "incorrect_to_correct": 1052,
+        "correct_to_incorrect": 936,
+        "incorrect_class_changed": 234,
+        "classification_improved_but_rmse_increased": 409
+      },
+      "pls": {
+        "incorrect_to_correct": 2064,
+        "correct_to_incorrect": 1098,
+        "incorrect_class_changed": 305,
+        "classification_improved_but_rmse_increased": 842
+      },
+      "krr": {
+        "incorrect_to_correct": 2299,
+        "correct_to_incorrect": 1137,
+        "incorrect_class_changed": 264,
+        "classification_improved_but_rmse_increased": 1426
+      },
+      "mlp": {
+        "incorrect_to_correct": 1786,
+        "correct_to_incorrect": 1568,
+        "incorrect_class_changed": 379,
+        "classification_improved_but_rmse_increased": 992
+      }
+    },
+    "principal_paper_numbers": "PASS: all saved summary values",
+    "principal_supplement_numbers": "PASS: all saved summary values",
+    "controlled_components": "PASS: all eight settings, gate and scale contrasts",
+    "single_split_identity_and_validation": {
+      "split": {
+        "development": {
+          "rows": 9873,
+          "loc_id_list_sha256": "fdc6b43070cd6c7af5f2fba7df96de2957b5ec2a8250d2e177c39a3bfedb64f1",
+          "class_counts": {
+            "alfalfa": 242,
+            "almonds": 5215,
+            "corn": 134,
+            "grapes": 2842,
+            "pistachios": 1440
+          }
+        },
+        "validation": {
+          "rows": 2824,
+          "loc_id_list_sha256": "397bb6696f029f8b2e42094e0cf29d51423070f5df7686b88a94caea8fe59d03",
+          "class_counts": {
+            "alfalfa": 64,
+            "almonds": 1416,
+            "corn": 47,
+            "grapes": 1245,
+            "pistachios": 52
+          }
+        },
+        "final": {
+          "rows": 3884,
+          "loc_id_list_sha256": "47065440ccb9b72ab829c4727e4a375a536bdc2a1a4e7dc28e82c4ea45de18f3",
+          "class_counts": {
+            "alfalfa": 30,
+            "almonds": 2015,
+            "corn": 24,
+            "grapes": 1242,
+            "pistachios": 573
+          }
+        }
+      },
+      "model_count": 48,
+      "operating_points": 192,
+      "recorded_winner_verified": true,
+      "max_validation_metric_difference": 6.661338147750939e-16,
+      "selected": {
+        "config": {
+          "decoder_alpha": 0.1,
+          "global_alpha": 0.01,
+          "residual_alpha": 0.0001
+        },
+        "margin": 0.0,
+        "model_key": "g=1e-02|d=1e-01|r=1e-04",
+        "validation_row": {
+          "coverage": 0.7181303116147308,
+          "macro_f1": 0.6154399641937031,
+          "margin": 0.0,
+          "model_key": "g=1e-02|d=1e-01|r=1e-04",
+          "rmse": 1.7337398177108252,
+          "sam_rad": 0.03811704544039904,
+          "semantic_label_change_rate_before_gate": 0.09454674220963173
+        }
+      },
+      "original_model_sha256": "14366c783a6562eabacdba73ae09f9f5899b1c01828df15e8f66df2febb81c0d",
+      "original_runner_sha256": "3a14e29f063f5809d941f4b202483bb017345475164c6c10a6eba90cffd770f1",
+      "fits_run": false
+    },
+    "original_state_replay_and_cells": {
+      "completed_utc": "2026-10-20T12:19:00.206423+00:00",
+      "single_split_2021": {
+        "groups": {
+          "all": {
+            "rows": 3884,
+            "cells": 109,
+            "mean_candidate_delta_rmse": -0.06160352582064361,
+            "mean_candidate_delta_sam": -0.003026857005895882,
+            "candidate_tail_events": 183
+          },
+          "top_label": {
+            "rows": 3582,
+            "cells": 107,
+            "mean_candidate_delta_rmse": -0.06255481998161255,
+            "mean_candidate_delta_sam": -0.003037376035711419,
+            "candidate_tail_events": 150
+          },
+          "retained": {
+            "rows": 2747,
+            "cells": 105,
+            "mean_candidate_delta_rmse": -0.07709579108345019,
+            "mean_candidate_delta_sam": -0.003779124094938195,
+            "candidate_tail_events": 129
+          },
+          "pruned": {
+            "rows": 835,
+            "cells": 72,
+            "mean_candidate_delta_rmse": -0.014717637207064064,
+            "mean_candidate_delta_sam": -0.0005971581690096798,
+            "candidate_tail_events": 21
+          }
+        },
+        "fallback_mean_rmse": 1.595299846814343,
+        "returned_mean_rmse": 1.5407730347375568,
+        "returned_mean_sam": 0.036380345133870215,
+        "mean_returned_delta_rmse": -0.05452681207678621,
+        "reference_anchor": {
+          "reference_accuracy": 0.9116889804325438,
+          "reference_macro_f1": 0.7901517746162647,
+          "fallback_agree_with_reference": 0.8656024716786818,
+          "changes": 302,
+          "toward": 147,
+          "away": 134,
+          "between": 21
+        },
+        "maximum_difference_from_original_csv": 1.2967404927621828e-13
+      },
+      "frozen_2020": {
+        "groups": {
+          "all": {
+            "rows": 1490,
+            "cells": 238,
+            "mean_candidate_delta_rmse": 1.0816311604452704,
+            "mean_candidate_delta_sam": -0.014123199091874246,
+            "candidate_tail_events": 1064
+          },
+          "top_label": {
+            "rows": 981,
+            "cells": 216,
+            "mean_candidate_delta_rmse": 0.6273853120703153,
+            "mean_candidate_delta_sam": -0.008504554312476617,
+            "candidate_tail_events": 576
+          },
+          "retained": {
+            "rows": 450,
+            "cells": 150,
+            "mean_candidate_delta_rmse": 0.24478413170540733,
+            "mean_candidate_delta_sam": -0.0024590545683820806,
+            "candidate_tail_events": 164
+          },
+          "pruned": {
+            "rows": 531,
+            "cells": 169,
+            "mean_candidate_delta_rmse": 0.9516236005151526,
+            "mean_candidate_delta_sam": -0.013627859180353344,
+            "candidate_tail_events": 412
+          }
+        },
+        "fallback_mean_rmse": 7.791901767359427,
+        "returned_mean_rmse": 7.865829860827504,
+        "returned_mean_sam": 0.22858180594484914,
+        "mean_returned_delta_rmse": 0.07392809346807605,
+        "reference_anchor": {
+          "reference_accuracy": 0.03154362416107383,
+          "reference_macro_f1": 0.015175164287332881,
+          "fallback_agree_with_reference": 0.0026845637583892616,
+          "changes": 509,
+          "toward": 28,
+          "away": 0,
+          "between": 481
+        },
+        "maximum_difference_from_original_csv": 1.687538997430238e-14
+      },
+      "cell_count_explanation": "238 cells cover all1490 frozen2020 rows;216 cells cover981 top-label-compatible rows before retained/pruned split.",
+      "new_fitting": false,
+      "original_source_or_model_changed": false,
+      "protocol_verification": "Original R8 search/temperature/tie rules and S10 bootstrap are recovered and verified in R8_selector_search_and_bootstrap_verified.json. The manuscript S11 calculation uses 5000 draws and the explicitly declared seed 20261018."
+    },
+    "R8_selector_search_and_bootstrap_verified": {
+      "original_runner_sha256": "e6e46cea31ecec195d174fc69a3e9a48ad545eb35f522ce0f8d27caae9db6a9a",
+      "original_preregistration_sha256": "912cd6dbdd43598b1a42ec6ced99504ddfd1139f1e1973b91635756b58eb2ce8",
+      "temperature_grid": [
+        0.25,
+        0.5,
+        1.0,
+        2.0,
+        4.0
+      ],
+      "temperature_scores_regenerated_from_original_state": [
+        {
+          "temperature": 0.25,
+          "validation_nll": 1.3141982513928112
+        },
+        {
+          "temperature": 0.5,
+          "validation_nll": 0.7438100414993454
+        },
+        {
+          "temperature": 1.0,
+          "validation_nll": 0.5078169628447644
+        },
+        {
+          "temperature": 2.0,
+          "validation_nll": 0.5467008412327821
+        },
+        {
+          "temperature": 4.0,
+          "validation_nll": 0.7731565245287518
+        }
+      ],
+      "selected_temperature": 1.0,
+      "temperature_tie_rule": "Minimum(validation NLL,temperature)",
+      "rank_tie_rule": "Descending score then ascending loc_id; NumPy lexsort",
+      "matched_count_rule": "int(round(validation_L_and_M/validation_L * external_L_count))",
+      "matched_count": 778,
+      "baseline_grids": {
+        "ridge_alpha": [
+          1e-06,
+          0.0001,
+          0.01,
+          1.0
+        ],
+        "pls_components": [
+          2,
+          4,
+          8,
+          16,
+          32
+        ],
+        "pds_half_width": [
+          1,
+          3,
+          5
+        ],
+        "cluster_count": [
+          2,
+          3,
+          5,
+          7
+        ]
+      },
+      "baseline_selection_rule": "Minimum validation RMSE, then configuration-key tuple in source; no parameter-count tiebreak",
+      "baseline_all_candidate_scores_or_models_resaved": false,
+      "bootstrap_scope": "Original S10 all238cells;1000draws,seed20260812. S11 uses 5000 draws with its separately declared seed 20261018.",
+      "selectors": [
+        {
+          "selector": "always_residual",
+          "accepted_rows": 1490,
+          "events": 1064,
+          "all_row_memberships_match": true,
+          "max_bootstrap_json_difference": 1.734723475976807e-18
+        },
+        {
+          "selector": "top_label_only",
+          "accepted_rows": 981,
+          "events": 576,
+          "all_row_memberships_match": true,
+          "max_bootstrap_json_difference": 0.0
+        },
+        {
+          "selector": "margin_only",
+          "accepted_rows": 726,
+          "events": 430,
+          "all_row_memberships_match": true,
+          "max_bootstrap_json_difference": 8.673617379884035e-19
+        },
+        {
+          "selector": "smst_top_label_and_raw_margin",
+          "accepted_rows": 450,
+          "events": 164,
+          "all_row_memberships_match": true,
+          "max_bootstrap_json_difference": 6.505213034913027e-19
+        },
+        {
+          "selector": "top_label_temperature_probability_matched",
+          "accepted_rows": 778,
+          "events": 391,
+          "all_row_memberships_match": true,
+          "max_bootstrap_json_difference": 2.168404344971009e-19
+        },
+        {
+          "selector": "top_label_entropy_matched",
+          "accepted_rows": 778,
+          "events": 393,
+          "all_row_memberships_match": true,
+          "max_bootstrap_json_difference": 8.673617379884035e-19
+        },
+        {
+          "selector": "top_label_normalized_margin_matched",
+          "accepted_rows": 778,
+          "events": 392,
+          "all_row_memberships_match": true,
+          "max_bootstrap_json_difference": 8.673617379884035e-19
+        }
+      ],
+      "fit_calls": false
+    },
+    "R5_geographic_records_verified": {
+      "geometry": {
+        "east_rows": 7765,
+        "excluded_rows": 1174,
+        "gap_degrees": 0.01,
+        "longitude_threshold": -120.2425085,
+        "west_rows": 7642
+      },
+      "checks": [
+        {
+          "direction": "west_to_east",
+          "rows": 7765,
+          "membership_matches_original": true,
+          "metrics_match": true
+        },
+        {
+          "direction": "east_to_west",
+          "rows": 7642,
+          "membership_matches_original": true,
+          "metrics_match": true
+        }
+      ],
+      "source_audit_sha256": "e9a5373efc2115da199fa2bc57c9825cd95cac3fae25ba9415ba0243e18e4cfc",
+      "original_directional_models_not_serialized_by_runner": true,
+      "fitting_run": false
+    },
+    "S11": {
+      "seed": 20261018,
+      "draws": 5000,
+      "all_values_match": true
+    },
+    "S24": {
+      "seed": 20260812,
+      "draws": 1000,
+      "all_values_match": true
+    }
+  },
+  "status": "PASS",
+  "completed_utc": "2026-10-20T12:19:02.132137+00:00"
+}

@@ -1,0 +1,13 @@
+{
+  "bindings": {
+    "per_location": "25bccc9bc89129100f50b760936298a70826a1e1bb1274fd628d0ef22652ff23",
+    "preregistration_sha256": "d34404d2cb78e056d58d09c7d13d45e4753062eba7a2a71875860c87ea4aa8c1",
+    "r4_runner_sha256": "3a14e29f063f5809d941f4b202483bb017345475164c6c10a6eba90cffd770f1",
+    "runner_sha256": "1eefb78f37886c08930b2eeb1c1a958961f14e12d45ae8f6ca290c9aac8292b1",
+    "summary": "3ac699e66e7b48ef7319ce122ac81721a15ed37a51627517a49d82c5a027ef66"
+  },
+  "boundary": "The audit validates bindings and decoder-relative accounting for a same-release post-R4 regional stress test. It does not make the test independent or certify population risk.",
+  "failures": [],
+  "schema": "smst-r5-regional-audit-v1",
+  "status": "PASS"
+}

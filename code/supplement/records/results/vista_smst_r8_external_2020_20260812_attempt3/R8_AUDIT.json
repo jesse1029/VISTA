@@ -1,0 +1,68 @@
+{
+  "checksum_matches": {
+    "R8_EXTERNAL_SUMMARY.json": true,
+    "R8_PER_LOCATION.csv": true,
+    "R8_SELECTION.json": true,
+    "R8_WAVELENGTH_DIAGNOSTICS.csv": true
+  },
+  "claim_boundary": "Frozen-2021 evaluation on a separate 2020 USGS DESIS--PRISMA release. It is external temporal evidence with the same sensor pair and California agricultural setting; it is not an independent sensor-pair, population-safety, or universal-generalization certificate.",
+  "failures": [],
+  "per_location_sha256": "bfd300bd7d5e402823fab3e8da5de5af168dc49944de006ee55720675a0928e1",
+  "preregistration_sha256": "912cd6dbdd43598b1a42ec6ced99504ddfd1139f1e1973b91635756b58eb2ce8",
+  "r4_runner_sha256": "3a14e29f063f5809d941f4b202483bb017345475164c6c10a6eba90cffd770f1",
+  "r8_runner_sha256": "e6e46cea31ecec195d174fc69a3e9a48ad545eb35f522ce0f8d27caae9db6a9a",
+  "schema": "smst-r8-external-2020-audit-v1",
+  "selector_checks": {
+    "always_residual": {
+      "accepted_rows": 1490,
+      "coverage": 1.0,
+      "harm_count": 1064,
+      "harm_formula_match": true,
+      "zero_label_change_rule": false
+    },
+    "margin_only": {
+      "accepted_rows": 726,
+      "coverage": 0.487248322147651,
+      "harm_count": 430,
+      "harm_formula_match": true,
+      "zero_label_change_rule": false
+    },
+    "smst_top_label_and_raw_margin": {
+      "accepted_rows": 450,
+      "coverage": 0.30201342281879195,
+      "harm_count": 164,
+      "harm_formula_match": true,
+      "zero_label_change_rule": true
+    },
+    "top_label_entropy_matched": {
+      "accepted_rows": 778,
+      "coverage": 0.5221476510067115,
+      "harm_count": 393,
+      "harm_formula_match": true,
+      "zero_label_change_rule": true
+    },
+    "top_label_normalized_margin_matched": {
+      "accepted_rows": 778,
+      "coverage": 0.5221476510067115,
+      "harm_count": 392,
+      "harm_formula_match": true,
+      "zero_label_change_rule": true
+    },
+    "top_label_only": {
+      "accepted_rows": 981,
+      "coverage": 0.6583892617449665,
+      "harm_count": 576,
+      "harm_formula_match": true,
+      "zero_label_change_rule": true
+    },
+    "top_label_temperature_probability_matched": {
+      "accepted_rows": 778,
+      "coverage": 0.5221476510067115,
+      "harm_count": 391,
+      "harm_formula_match": true,
+      "zero_label_change_rule": true
+    }
+  },
+  "status": "PASS",
+  "summary_sha256": "3e5fabf105fb29dd7689446d60bc8b74463aa635439caea56b2dae82a4759ea2"
+}

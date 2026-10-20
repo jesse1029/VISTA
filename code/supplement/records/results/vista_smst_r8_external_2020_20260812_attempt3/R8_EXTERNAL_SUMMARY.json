@@ -1,0 +1,435 @@
+{
+  "baseline_external": {
+    "cluster_residual": {
+      "external_evaluation_seconds": 0.0005038529634475708,
+      "parameter_count": 1357,
+      "sam_rad": 0.22127193832396252,
+      "spectral_rmse": 7.941767705367963
+    },
+    "diagonal_affine": {
+      "external_evaluation_seconds": 0.00012512505054473877,
+      "parameter_count": 118,
+      "sam_rad": 0.22937287005723633,
+      "spectral_rmse": 7.7923256583569325
+    },
+    "full_ridge": {
+      "external_evaluation_seconds": 0.002414291026070714,
+      "parameter_count": 3540,
+      "sam_rad": 0.27238481648662616,
+      "spectral_rmse": 21.398891907929755
+    },
+    "pds": {
+      "external_evaluation_seconds": 0.0025534420274198055,
+      "parameter_count": 678,
+      "sam_rad": 0.2208720122021564,
+      "spectral_rmse": 10.300399501871286
+    },
+    "pls": {
+      "external_evaluation_seconds": 0.00019980408251285553,
+      "parameter_count": 3540,
+      "sam_rad": 0.18833763828484923,
+      "spectral_rmse": 12.21313052821539
+    },
+    "unconditional_residual": {
+      "external_evaluation_seconds": 0.00013692700304090977,
+      "parameter_count": 236,
+      "sam_rad": 0.22937287490832406,
+      "spectral_rmse": 7.792325700944307
+    }
+  },
+  "baseline_selection_seconds": 27.38924977905117,
+  "claim_boundary": "Frozen-2021 evaluation on a separate 2020 USGS DESIS--PRISMA release. It is external temporal evidence with the same sensor pair and California agricultural setting; it is not an independent sensor-pair, population-safety, or universal-generalization certificate.",
+  "external_pair": {
+    "desis_image": "DESIS-HSI-L2A-DT0466155472_005-20200618T152131-V0210",
+    "prisma_image": "PRS_L2D_STD_20200617185821_20200617185825_0001",
+    "release_doi": "10.5066/P98LO5D4",
+    "rows": 1490,
+    "shared_decoder_label_rows": 398,
+    "spatial_cells": 238,
+    "wavelength_count": 59
+  },
+  "input_sha256": {
+    "desis_2020.csv": "2c9a126a77baada7d74d6866b204775a18b0ccfb515c42611f33a02cece6907c",
+    "metadata_2020.xml": "89fbc0d64c2137e9eaaebfd647436a82146a5c677ca8852f2818c564ae341f22",
+    "prisma_2020.csv": "3ed9d66f082dffba937ac1a4f743d651432900fa26ca582fd7c0dc963a44071b",
+    "r4_decision_lock": "df8ef02e0bb3150935360562284317b20e2a13dee8650553b1455c6af2086046",
+    "r4_development_models": "14366c783a6562eabacdba73ae09f9f5899b1c01828df15e8f66df2febb81c0d",
+    "r4_preregistration": "7618c6c5859cf43e84a7a158121c02872bb519c8d548331012d1c1c6a18ae04a",
+    "r4_runner": "3a14e29f063f5809d941f4b202483bb017345475164c6c10a6eba90cffd770f1",
+    "r8_preregistration": "912cd6dbdd43598b1a42ec6ced99504ddfd1139f1e1973b91635756b58eb2ce8",
+    "r8_runner": "e6e46cea31ecec195d174fc69a3e9a48ad545eb35f522ce0f8d27caae9db6a9a"
+  },
+  "r4_selected": {
+    "config": {
+      "decoder_alpha": 0.1,
+      "global_alpha": 0.01,
+      "residual_alpha": 0.0001
+    },
+    "margin": 0.0,
+    "model_key": "g=1e-02|d=1e-01|r=1e-04",
+    "validation_row": {
+      "coverage": 0.7181303116147308,
+      "macro_f1": 0.6154399641937031,
+      "margin": 0.0,
+      "model_key": "g=1e-02|d=1e-01|r=1e-04",
+      "rmse": 1.7337398177108252,
+      "sam_rad": 0.03811704544039904,
+      "semantic_label_change_rate_before_gate": 0.09454674220963173
+    }
+  },
+  "schema": "smst-r8-external-2020-v1",
+  "selector_lock": {
+    "rules": {
+      "both_raw_margin": {
+        "kind": "logical",
+        "matched": false
+      },
+      "margin_only": {
+        "kind": "logical",
+        "matched": false
+      },
+      "top_label_entropy": {
+        "direction": "ascending",
+        "kind": "rank",
+        "matched": true
+      },
+      "top_label_normalized_margin": {
+        "direction": "descending",
+        "kind": "rank",
+        "matched": true
+      },
+      "top_label_only": {
+        "kind": "logical",
+        "matched": false
+      },
+      "top_label_temperature_probability": {
+        "direction": "descending",
+        "kind": "rank",
+        "matched": true
+      }
+    },
+    "temperature": 1.0,
+    "validation_both_count": 2028,
+    "validation_both_coverage": 0.7181303116147308,
+    "validation_conditional_acceptance_fraction": 0.7931169339069222,
+    "validation_rows": 2824,
+    "validation_top_label_count": 2557
+  },
+  "selectors_external": {
+    "always_residual": {
+      "accepted_rows": 1490,
+      "coverage": 1.0,
+      "declared_harms_vs_global": 1064,
+      "delta_rmse_vs_global": 1.081631160445271,
+      "delta_sam_rad_vs_global": -0.014123199091874261,
+      "frozen_label_changes_vs_global": 509,
+      "harm_rate_all": 0.7140939597315437,
+      "harm_rate_committed": 0.7140939597315437,
+      "name": "always_residual",
+      "sam_rad": 0.21520127434007016,
+      "shared_label_macro_f1": 0.03508552698168002,
+      "shared_label_rows": 398,
+      "spatial_cell_bootstrap": {
+        "coverage": {
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "mean": 1.0
+        },
+        "delta_rmse": {
+          "ci95": [
+            0.9831233833502299,
+            1.1775180618012817
+          ],
+          "mean": 1.081233678607528
+        },
+        "delta_sam_rad": {
+          "ci95": [
+            -0.015877895974425568,
+            -0.012346732737931939
+          ],
+          "mean": -0.014097576065302637
+        },
+        "harm_rate_all": {
+          "ci95": [
+            0.6657903987972891,
+            0.7612388375954653
+          ],
+          "mean": 0.7140342308819394
+        }
+      },
+      "spectral_rmse": 8.873532927804698
+    },
+    "margin_only": {
+      "accepted_rows": 726,
+      "coverage": 0.487248322147651,
+      "declared_harms_vs_global": 430,
+      "delta_rmse_vs_global": 0.4518703709060574,
+      "delta_sam_rad_vs_global": -0.005207899206295025,
+      "frozen_label_changes_vs_global": 276,
+      "harm_rate_all": 0.28859060402684567,
+      "harm_rate_committed": 0.5922865013774105,
+      "name": "margin_only",
+      "sam_rad": 0.2241165742256494,
+      "shared_label_macro_f1": 0.036741196164843316,
+      "shared_label_rows": 398,
+      "spatial_cell_bootstrap": {
+        "coverage": {
+          "ci95": [
+            0.4453336518004885,
+            0.527685415155293
+          ],
+          "mean": 0.48649091366310604
+        },
+        "delta_rmse": {
+          "ci95": [
+            0.3786183460429782,
+            0.5296482464480937
+          ],
+          "mean": 0.4503856084632749
+        },
+        "delta_sam_rad": {
+          "ci95": [
+            -0.006445675477240069,
+            -0.0038911726770192276
+          ],
+          "mean": -0.005202776148003646
+        },
+        "harm_rate_all": {
+          "ci95": [
+            0.2514153885541216,
+            0.32718197341253213
+          ],
+          "mean": 0.28767470365786757
+        }
+      },
+      "spectral_rmse": 8.243772138265484
+    },
+    "smst_top_label_and_raw_margin": {
+      "accepted_rows": 450,
+      "coverage": 0.30201342281879195,
+      "declared_harms_vs_global": 164,
+      "delta_rmse_vs_global": 0.07392809346807727,
+      "delta_sam_rad_vs_global": -0.0007426674870952832,
+      "frozen_label_changes_vs_global": 0,
+      "harm_rate_all": 0.11006711409395974,
+      "harm_rate_committed": 0.36444444444444446,
+      "name": "smst_top_label_and_raw_margin",
+      "sam_rad": 0.22858180594484914,
+      "shared_label_macro_f1": 0.03848853577740206,
+      "shared_label_rows": 398,
+      "spatial_cell_bootstrap": {
+        "coverage": {
+          "ci95": [
+            0.26410822388123556,
+            0.34053088110386487
+          ],
+          "mean": 0.3018201731766698
+        },
+        "delta_rmse": {
+          "ci95": [
+            0.05477659319157134,
+            0.0931905916290948
+          ],
+          "mean": 0.07383172188697304
+        },
+        "delta_sam_rad": {
+          "ci95": [
+            -0.0016103458592052991,
+            0.0001326497036193065
+          ],
+          "mean": -0.0007511363642865017
+        },
+        "harm_rate_all": {
+          "ci95": [
+            0.08749848195697432,
+            0.13262341349672338
+          ],
+          "mean": 0.10971377889117856
+        }
+      },
+      "spectral_rmse": 7.865829860827504
+    },
+    "top_label_entropy_matched": {
+      "accepted_rows": 778,
+      "coverage": 0.5221476510067115,
+      "declared_harms_vs_global": 393,
+      "delta_rmse_vs_global": 0.266664087184008,
+      "delta_sam_rad_vs_global": -0.002968891580078903,
+      "frozen_label_changes_vs_global": 0,
+      "harm_rate_all": 0.26375838926174494,
+      "harm_rate_committed": 0.5051413881748072,
+      "name": "top_label_entropy_matched",
+      "sam_rad": 0.22635558185186552,
+      "shared_label_macro_f1": 0.03848853577740206,
+      "shared_label_rows": 398,
+      "spatial_cell_bootstrap": {
+        "coverage": {
+          "ci95": [
+            0.47649530114241667,
+            0.5712552852729362
+          ],
+          "mean": 0.5223305192467856
+        },
+        "delta_rmse": {
+          "ci95": [
+            0.21660640704549894,
+            0.3208721569390458
+          ],
+          "mean": 0.2669548382478161
+        },
+        "delta_sam_rad": {
+          "ci95": [
+            -0.004225828189404053,
+            -0.0017156728545629967
+          ],
+          "mean": -0.0029626471954095745
+        },
+        "harm_rate_all": {
+          "ci95": [
+            0.21996545217184904,
+            0.30790220915546357
+          ],
+          "mean": 0.2639234445746402
+        }
+      },
+      "spectral_rmse": 8.058565854543435
+    },
+    "top_label_normalized_margin_matched": {
+      "accepted_rows": 778,
+      "coverage": 0.5221476510067115,
+      "declared_harms_vs_global": 392,
+      "delta_rmse_vs_global": 0.2521572793645266,
+      "delta_sam_rad_vs_global": -0.0029756810816294887,
+      "frozen_label_changes_vs_global": 0,
+      "harm_rate_all": 0.26308724832214764,
+      "harm_rate_committed": 0.5038560411311054,
+      "name": "top_label_normalized_margin_matched",
+      "sam_rad": 0.22634879235031494,
+      "shared_label_macro_f1": 0.03848853577740206,
+      "shared_label_rows": 398,
+      "spatial_cell_bootstrap": {
+        "coverage": {
+          "ci95": [
+            0.4760807967883792,
+            0.568732595656947
+          ],
+          "mean": 0.5222931242151276
+        },
+        "delta_rmse": {
+          "ci95": [
+            0.2039400125281483,
+            0.29988679198913554
+          ],
+          "mean": 0.2523953686000101
+        },
+        "delta_sam_rad": {
+          "ci95": [
+            -0.004275229985673954,
+            -0.001698627874347842
+          ],
+          "mean": -0.0029689079768975544
+        },
+        "harm_rate_all": {
+          "ci95": [
+            0.2194056218828196,
+            0.3069875900107247
+          ],
+          "mean": 0.2632276256241418
+        }
+      },
+      "spectral_rmse": 8.044059046723953
+    },
+    "top_label_only": {
+      "accepted_rows": 981,
+      "coverage": 0.6583892617449665,
+      "declared_harms_vs_global": 576,
+      "delta_rmse_vs_global": 0.4130637524436125,
+      "delta_sam_rad_vs_global": -0.005599307235261475,
+      "frozen_label_changes_vs_global": 0,
+      "harm_rate_all": 0.3865771812080537,
+      "harm_rate_committed": 0.5871559633027523,
+      "name": "top_label_only",
+      "sam_rad": 0.22372516619668295,
+      "shared_label_macro_f1": 0.03848853577740206,
+      "shared_label_rows": 398,
+      "spatial_cell_bootstrap": {
+        "coverage": {
+          "ci95": [
+            0.6168008664521517,
+            0.7013765503376891
+          ],
+          "mean": 0.6586444112553544
+        },
+        "delta_rmse": {
+          "ci95": [
+            0.35556202313050894,
+            0.46959154747041976
+          ],
+          "mean": 0.4134838723622946
+        },
+        "delta_sam_rad": {
+          "ci95": [
+            -0.007030596155882819,
+            -0.004058986677108266
+          ],
+          "mean": -0.0055842039342344175
+        },
+        "harm_rate_all": {
+          "ci95": [
+            0.3414944623377685,
+            0.4312401544042331
+          ],
+          "mean": 0.3867166445834795
+        }
+      },
+      "spectral_rmse": 8.20496551980304
+    },
+    "top_label_temperature_probability_matched": {
+      "accepted_rows": 778,
+      "coverage": 0.5221476510067115,
+      "declared_harms_vs_global": 391,
+      "delta_rmse_vs_global": 0.26326171535066045,
+      "delta_sam_rad_vs_global": -0.003013602951401878,
+      "frozen_label_changes_vs_global": 0,
+      "harm_rate_all": 0.26241610738255033,
+      "harm_rate_committed": 0.5025706940874036,
+      "name": "top_label_temperature_probability_matched",
+      "sam_rad": 0.22631087048054255,
+      "shared_label_macro_f1": 0.03848853577740206,
+      "shared_label_rows": 398,
+      "spatial_cell_bootstrap": {
+        "coverage": {
+          "ci95": [
+            0.4768387317156977,
+            0.5697529424297637
+          ],
+          "mean": 0.5223709339017648
+        },
+        "delta_rmse": {
+          "ci95": [
+            0.21262711741282778,
+            0.31662368656325357
+          ],
+          "mean": 0.26360801462237227
+        },
+        "delta_sam_rad": {
+          "ci95": [
+            -0.0042752654587786204,
+            -0.001798342513195493
+          ],
+          "mean": -0.0030081071027112253
+        },
+        "harm_rate_all": {
+          "ci95": [
+            0.21837147434063736,
+            0.3062617154783903
+          ],
+          "mean": 0.2626244489982272
+        }
+      },
+      "spectral_rmse": 8.055163482710087
+    }
+  }
+}

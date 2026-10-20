@@ -1,0 +1,105 @@
+{
+  "claim_boundary": "Paired evaluation on one August-2021 agricultural overlap. Top-label preservation is exact only with respect to the frozen decoder and global-ridge fallback; it is not a population safety certificate.",
+  "created_at": "2026-08-11T16:47:30.884320+00:00",
+  "decision_lock_sha256": "df8ef02e0bb3150935360562284317b20e2a13dee8650553b1455c6af2086046",
+  "final_row_count": 3884,
+  "metrics": {
+    "global_ridge": {
+      "accuracy": 0.86302780638517,
+      "macro_f1": 0.6321969183356813,
+      "per_class_f1": {
+        "alfalfa": 0.2905982905982906,
+        "almonds": 0.8923076923076924,
+        "corn": 0.2631578947368421,
+        "grapes": 0.8510463684858433,
+        "pistachios": 0.8638743455497382
+      },
+      "rmse": 1.595299846814343,
+      "sam_rad": 0.03905317054293171
+    },
+    "identity": {
+      "accuracy": 0.006179196704428424,
+      "macro_f1": 0.002457757296466974,
+      "per_class_f1": {
+        "alfalfa": 0.0,
+        "almonds": 0.0,
+        "corn": 0.01228878648233487,
+        "grapes": 0.0,
+        "pistachios": 0.0
+      },
+      "rmse": 3.0342242060084805,
+      "sam_rad": 0.09883955925855858
+    },
+    "label_conditioned_oracle_diagnostic": {
+      "accuracy": 0.945417095777549,
+      "macro_f1": 0.7989496885655141,
+      "per_class_f1": {
+        "alfalfa": 0.2,
+        "almonds": 0.9591266818989591,
+        "corn": 0.9230769230769231,
+        "grapes": 0.9221183800623053,
+        "pistachios": 0.9904264577893821
+      },
+      "rmse": 1.5166793637259868,
+      "sam_rad": 0.035970381948205364
+    },
+    "smst": {
+      "accuracy": 0.86302780638517,
+      "macro_f1": 0.6321969183356813,
+      "per_class_f1": {
+        "alfalfa": 0.2905982905982906,
+        "almonds": 0.8923076923076924,
+        "corn": 0.2631578947368421,
+        "grapes": 0.8510463684858433,
+        "pistachios": 0.8638743455497382
+      },
+      "rmse": 1.5407730347375566,
+      "sam_rad": 0.03638034513387012
+    },
+    "unconstrained_semantic": {
+      "accuracy": 0.857621009268795,
+      "macro_f1": 0.6278863005119122,
+      "per_class_f1": {
+        "alfalfa": 0.12658227848101267,
+        "almonds": 0.8823831535695943,
+        "corn": 0.3902439024390244,
+        "grapes": 0.8234839706450366,
+        "pistachios": 0.9167381974248927
+      },
+      "rmse": 1.5336963209936993,
+      "sam_rad": 0.036026313537035885
+    }
+  },
+  "paired_vs_global": {
+    "component_union_harms_vs_global": 129,
+    "correct_to_incorrect_vs_global": 0,
+    "coverage": 0.7072605561277034,
+    "semantic_label_changes_after_gate": 0,
+    "semantic_label_changes_before_gate": 302,
+    "smst_minus_global_macro_f1": 0.0,
+    "smst_minus_global_rmse": -0.054526812076786335,
+    "smst_minus_global_sam_rad": -0.002672825409061594,
+    "spectral_harms_vs_global": 129
+  },
+  "pre_registration_sha256": "7618c6c5859cf43e84a7a158121c02872bb519c8d548331012d1c1c6a18ae04a",
+  "schema": "smst-r4-final-results-v1",
+  "script_sha256": "3a14e29f063f5809d941f4b202483bb017345475164c6c10a6eba90cffd770f1",
+  "selected": {
+    "config": {
+      "decoder_alpha": 0.1,
+      "global_alpha": 0.01,
+      "residual_alpha": 0.0001
+    },
+    "margin": 0.0,
+    "model_key": "g=1e-02|d=1e-01|r=1e-04",
+    "validation_row": {
+      "coverage": 0.7181303116147308,
+      "macro_f1": 0.6154399641937031,
+      "margin": 0.0,
+      "model_key": "g=1e-02|d=1e-01|r=1e-04",
+      "rmse": 1.7337398177108252,
+      "sam_rad": 0.03811704544039904,
+      "semantic_label_change_rate_before_gate": 0.09454674220963173
+    }
+  }
+}

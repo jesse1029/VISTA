@@ -1,0 +1,24 @@
+{
+  "accepted_rows": {
+    "both": 2747,
+    "label_only": 3582,
+    "margin_only": 2927,
+    "unconstrained": 3884
+  },
+  "boundary": "Integrity audit only; it neither refits R4 nor turns R6 into an independent or primary evaluation.",
+  "errors": [],
+  "input_sha256": {
+    "per_location": "7653e8d1dcdc2c08eed3e5dc5d4824b690e30e48247f36c142d39c2701190a7d",
+    "preregistration": "9384da22a0092e3206ffa01a1740ab5362b264cc334f727f8d50409fa286115f",
+    "r4_summary": "36877383a27457d0534c856e3b0e046c2bd74fc7e304fe8cf2e1ebf957a2755a",
+    "runner": "6131a684e36f00123da620514dc483abd5070cdf99ca18766b4edd1b1eb5a8f9",
+    "summary": "e1a3f1fee6ab469b2397be4649c2d11e77f75aaf5680723eed6dc9471be177fa"
+  },
+  "predicate_violations": {
+    "both_not_intersection": 0,
+    "label_changes_in_label_only": 0
+  },
+  "row_count": 3884,
+  "schema": "smst-r6-audit-v1",
+  "status": "PASS"
+}

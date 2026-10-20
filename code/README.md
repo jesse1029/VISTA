@@ -36,6 +36,14 @@ for the mapping to the paper and the distinction between model replay and retrai
 The bundled input tables come from the public USGS releases described in
 [data/README.md](data/README.md), with the exact research-input hashes in `input_hashes.json`.
 
+The command checks the complete release manifest before computation. Run it without
+Python's `-O` or `-OO` flags or `PYTHONOPTIMIZE`, which disable assertions in the
+archived verification scripts. Fast regression checks are available separately:
+
+```bash
+python tests/test_entrypoints.py
+```
+
 ## Frozen-model inference
 
 Inference needs only NumPy and PRISMA measurements; it never reads DESIS, crop labels, or

@@ -21,15 +21,16 @@ Section names refer to the main paper and supplement, rather than historical tab
 | Controlled components; main Table II | `principal/controlled_ablation.csv`, `scripts/recompute_components.py` | Recompute all eight settings and the reported gate and scale contrasts from saved rows |
 | Complete spectra, wavelength errors, ranges and smoothness; S6 | Ten saved spectral NPZ files; `scripts/paper_numbers.py`, `scripts/supp_extra_numbers.py` | Compare saved spectra against per-location RMSE and recompute numerical summaries, including development-spectrum ranges |
 | Single-split partition and selection; S2–S3 | `supplement/records/results/vista_smst_r4_20260812` | Regenerate 9,873 development, 2,824 validation and 3,884 final memberships; replay 48 stored states at 192 recorded operating points and check the recorded selection |
-| Single-split 2021 results; S7 | Same saved selected state and original final CSV | Replay all 3,884 final spectra; compare classifications, margins, adoption and RMSE with the original output |
-| Directional geographic stress; S9 | `supplement/records/results/vista_smst_r5_regional_20260812` | Verify 7,642 west and 7,765 east memberships; recompute saved directional RMSE summaries |
+| Single-split 2021 results; S7 | Same saved selected state and original final CSV | Replay all 3,884 final spectra; compare classifications, margins, adoption and RMSE with the original output; verify all five saved output summaries, including the diagnostic oracle |
+| Single-split gate components; S8 | Replayed single-split spectra and `supplement/verify_saved_diagnostics.py` | Recompute all four gate variants and their classification, adoption and spectral quantities |
+| Wavelength diagnostics | Replayed 2021 and 2020 spectra and `supplement/verify_saved_diagnostics.py` | Check all 59 bands for 2021 global/returned spectra and accepted corrections, and 2020 returned VISTA spectra |
+| Directional geographic stress; S9 | `supplement/records/results/vista_smst_r5_regional_20260812` | Verify 7,642 west and 7,765 east memberships; recompute saved directional RMSE, accuracy, macro-F1, adoption and large-error counts |
 | Fixed 2021-to-2020 transfer; S10 | Saved 2021 state, public 2020 inputs and original R8 output | Replay 1,490 spectra; verify all seven selector memberships, temperature selection, 778-row matched selections and the 1,000-draw calculation with seed 20260812 |
 | Raw-margin stratification; S11 | Replayed single-split and 2020 outputs; `supplement/recompute_s11.py` | Recompute both conditions, 5,000 draws each, with the manuscript seed 20261018 |
 | Shared-crop 2020 analysis; S10 | `supplement/recompute_s24.py` | Recompute the four shared crops and aggregate results over 98 cells, 1,000 draws, seed 20260812 |
 | Reference-spectrum classifier agreement; S5 and S12 | Saved five-fold and single-split classifiers and paired DESIS spectra | Recompute overall and per-crop agreement for the principal study; overall agreement and the three groups of changed predictions for the single-split study |
 
-The original source scripts and saved outputs for the other historical diagnostics,
-including the S8 gate components and wavelength diagnostics, are included under
+The original source scripts and saved outputs are included under
 `supplement/records`. Their original directory names (R4, R5, R6, R8) identify study
 records, not the current manuscript's table numbering.
 
@@ -45,6 +46,8 @@ The directional models and fitted 2020 comparison-method states were not seriali
 by the original runners. Their original source, selections and available outputs
 are included. The verification report distinguishes recomputation from saved rows
 from inference using stored models. It does not claim to have rerun those fits.
+The 2020 wavelength file's `diagonal_affine` columns belong to the separately selected
+comparison baseline, so the wavelength replay checks its `smst` columns only.
 
 The original 2020 runner is
 `supplement/records/experiments/smst_r8_external_2020/run_smst_r8_external_2020.py`.
@@ -78,6 +81,10 @@ The aggregate `paper_numbers.json` now includes `crossed.map_contrasts`, copied
 from the existing `principal/crossed_scale.json`; all pre-existing numerical
 values were preserved.
 
-`MANIFEST.json` and `SHA256SUMS.txt` cover the distributed files. The input hashes
-are checked before computation. Generated outputs go to a separate directory and
-never replace the reported results.
+`MANIFEST.json` and `SHA256SUMS.txt` cover the distributed files. The unified verifier
+checks the complete manifest and input hashes before computation. It rejects optimized
+Python execution (`-O`, `-OO`, or `PYTHONOPTIMIZE`) so archived scientific assertions
+remain active. Generated outputs go to a separate directory and never replace the
+reported results. `python tests/test_entrypoints.py` exercises missing/corrupted-file
+rejection, output protection, optimization rejection, inference from an unrelated
+working directory, batching, class preservation, invalid inputs and interpolation.

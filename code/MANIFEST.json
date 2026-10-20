@@ -10,8 +10,8 @@
     },
     {
       "path": "check_manifest.py",
-      "bytes": 903,
-      "sha256": "080b3721fc1eca5521e669fd3c994ef43c09b9aace9681322f8ae6324a37626d"
+      "bytes": 1004,
+      "sha256": "4abf201f4c186d90283b38def4752407c5fb9c2a7632c202bc97eba387103fda"
     },
     {
       "path": "data/public_usgs_inputs.zip",
@@ -60,8 +60,8 @@
     },
     {
       "path": "predict.py",
-      "bytes": 716,
-      "sha256": "1d3800fbdc8978dd784fa8eee2af9af6c624aa4c6f738c9c7a0ef0d172ef9a2e"
+      "bytes": 810,
+      "sha256": "c07ad0872775d994e5357419589406d06e81a2d62f25968d969c1b98858e8658"
     },
     {
       "path": "prepare_inputs.py",
@@ -70,8 +70,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 7103,
-      "sha256": "306e7e4f6663442c54bf715f56ae408f7bef938116b49260cb24692a51befc95"
+      "bytes": 7396,
+      "sha256": "e258800dd2b7dcadd9c64565277626658616b93e66dd22505feb031c3bd40f56"
     },
     {
       "path": "reported_results/archived_lbfgs_windows/common_utility/fold_0_decision.json",
@@ -300,8 +300,8 @@
     },
     {
       "path": "reproduce.sh",
-      "bytes": 2199,
-      "sha256": "6282df4a06e82b9c593a32de7a6ae670edbe22294a52852190ef1d7267a8b70d"
+      "bytes": 2477,
+      "sha256": "4e019d19dd5182d94636b917487f015bb087164a67b9503f8a30c6f4b6beaed2"
     },
     {
       "path": "REPRODUCE_CURRENT_CU.ps1",
@@ -310,8 +310,8 @@
     },
     {
       "path": "REPRODUCIBILITY.md",
-      "bytes": 6117,
-      "sha256": "c0b77b2a14abe6a9fdb0801ac28ddc568e5604b0cd4771d404d592397aa05b23"
+      "bytes": 7117,
+      "sha256": "7a55047993eb30902fc9e1cfcdd228e5371f8fd10da39ae3ed07b44eda7352c3"
     },
     {
       "path": "requirements-fit.txt",
@@ -729,6 +729,11 @@
       "sha256": "f92896db57ac1b220b516b534c22bff49033156ab8d81fa7067a83988dc57dac"
     },
     {
+      "path": "supplement/records/results/vista_smst_review_e1e3_v2_20260812.py",
+      "bytes": 30070,
+      "sha256": "7f3b7c3861d797f7fcde595342e4ecb7b9438c6572be352d8dbd4a72c894289c"
+    },
+    {
       "path": "supplement/records/results/vista_smst_review_e1e3_v2_20260812/DECISION_LOCK.json",
       "bytes": 2548,
       "sha256": "e525b67a43a98eacab456a644392b27c7ffc197ab1eeeea6cb6c21eeab529290"
@@ -769,24 +774,29 @@
       "sha256": "37252d247187c250d0e3fa71359e1863e645d86aba45b4ff877a05f1be047138"
     },
     {
-      "path": "supplement/records/results/vista_smst_review_e1e3_v2_20260812.py",
-      "bytes": 30070,
-      "sha256": "7f3b7c3861d797f7fcde595342e4ecb7b9438c6572be352d8dbd4a72c894289c"
-    },
-    {
       "path": "supplement/single_split_selected_state.npz",
       "bytes": 11340,
       "sha256": "46961fedda753ae8dc30359ed51d4af15ce93def0fa7fc7d15de38f1e9a58568"
     },
     {
       "path": "supplement/verify_historical_records.py",
-      "bytes": 13503,
-      "sha256": "d1a4d8b77568395f10a936ebd6466d7f139b28e6ff3d22b9ebfb763dea50754a"
+      "bytes": 13643,
+      "sha256": "3724b9a14edab39edf6246c1d7a031338ab0d5e8c1c5c2ce2302c76941ac80df"
+    },
+    {
+      "path": "supplement/verify_saved_diagnostics.py",
+      "bytes": 9365,
+      "sha256": "29857ca45b4e08fab7e365e4c3a3e6ae756cd16d47b21dec037923a3669b13f4"
     },
     {
       "path": "supplement/verify_selectors_and_directional.py",
-      "bytes": 6898,
-      "sha256": "667cca25bd2578739422bbef4cdd0d0ed4755856445433a7210ec2da2d8f8de5"
+      "bytes": 7038,
+      "sha256": "71f41440a24ffec39a0c382e524ea4c7f968f2b3960fba8b0dc68aa05ef2af95"
+    },
+    {
+      "path": "tests/test_entrypoints.py",
+      "bytes": 5489,
+      "sha256": "4258dc4cd05d85394b3b8cf035e1b7b2d1efce1b3a970d61b10edfdb522eb229"
     },
     {
       "path": "THIRD_PARTY.md",
@@ -810,13 +820,13 @@
     },
     {
       "path": "verification/verification_report.json",
-      "bytes": 15689,
-      "sha256": "fd4cc5061148c72f6106d2514f58d03d43230c10c0451f04b8455e57cd241a25"
+      "bytes": 16421,
+      "sha256": "f412eea6f9548098a3573bfa5725c8a38810e3273ee6aec9f407a725b0df2070"
     },
     {
       "path": "verify_reproduction.py",
-      "bytes": 12582,
-      "sha256": "8a5b34e8eaf4aa38053474204b0a54195b2a2d4b75fe0b9431eeb30e49e9285c"
+      "bytes": 13649,
+      "sha256": "fd307aff49f320fcf7fbd55cc3fe5042a206ef243037ffb9f36937f54d45c999"
     },
     {
       "path": "vista.py",

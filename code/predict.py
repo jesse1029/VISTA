@@ -1,6 +1,10 @@
 """Portable frozen-model CLI. No DESIS or crop-label argument exists."""
 import argparse
+from pathlib import Path
+import sys
 import numpy as np
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 from vista import FrozenVISTA
 
 def main():

@@ -4,8 +4,8 @@ import json
 from pathlib import Path
 
 
-def main():
-    root = Path(__file__).resolve().parent
+def check_release(root=None):
+    root = Path(__file__).resolve().parent if root is None else Path(root).resolve()
     manifest = json.loads((root / "MANIFEST.json").read_text(encoding="utf-8"))
     for entry in manifest["files"]:
         relative = Path(entry["path"])
@@ -17,7 +17,11 @@ def main():
         content = path.read_bytes()
         if len(content) != entry["bytes"] or hashlib.sha256(content).hexdigest() != entry["sha256"]:
             raise ValueError(f"Release file mismatch: {relative}")
-    print(f"PASS: {len(manifest['files'])} distributed files")
+    return len(manifest["files"])
+
+
+def main():
+    print(f"PASS: {check_release()} distributed files")
 
 
 if __name__ == "__main__":

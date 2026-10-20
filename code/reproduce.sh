@@ -3,8 +3,19 @@
 set -euo pipefail
 DATA="$1"; HERE="$(cd "$(dirname "$0")" && pwd)"; OUT="${2:-$HERE/reproduced}"
 DESIS="$DATA/desis_2021.csv"; PRISMA="$DATA/prisma_2021.csv"
-echo "85ac21e38fb990a75714f90be0d2ced643275adf4e46570f326e765709c48ccc  $DESIS" | sha256sum -c -
-echo "0c6ef3dff0e5eff1c3e9ebb349494465d4459ee189c2aeb089af4e7622822647  $PRISMA" | sha256sum -c -
+python - "$DESIS" "$PRISMA" <<'PY'
+import hashlib
+import sys
+from pathlib import Path
+expected = (
+    "85ac21e38fb990a75714f90be0d2ced643275adf4e46570f326e765709c48ccc",
+    "0c6ef3dff0e5eff1c3e9ebb349494465d4459ee189c2aeb089af4e7622822647",
+)
+for filename, digest in zip(sys.argv[1:], expected):
+    if hashlib.sha256(Path(filename).read_bytes()).hexdigest() != digest:
+        raise SystemExit(f"Input SHA-256 mismatch: {filename}")
+    print(f"Verified {filename}")
+PY
 export OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1
 ORIG="$HERE/vendor/original_common_utility.py"; S="$HERE/scripts"
 if [ -e "$OUT" ] && [ -n "$(ls -A "$OUT" 2>/dev/null)" ]; then

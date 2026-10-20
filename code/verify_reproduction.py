@@ -55,6 +55,10 @@ def main():
                         help="Directory with the five files listed in input_hashes.json")
     parser.add_argument("--out", type=Path, required=True, help="New or empty output directory")
     args = parser.parse_args()
+    require(not sys.flags.optimize,
+            "Run verification without -O/-OO or PYTHONOPTIMIZE; all scientific checks must remain active")
+    from check_manifest import check_release
+    checked_files = check_release()
     data, out = args.data_dir.resolve(), args.out.resolve()
     require(not out.exists() or not any(out.iterdir()), "Choose a new or empty output directory")
     out.mkdir(parents=True, exist_ok=True)
@@ -66,7 +70,8 @@ def main():
     report = {
         "started_utc": datetime.now(timezone.utc).isoformat(),
         "python": sys.version.split()[0], "numpy": np.__version__, "pandas": pd.__version__,
-        "input_hashes": hashes, "model_fitting_performed": False, "checks": {},
+        "input_hashes": hashes, "model_fitting_performed": False,
+        "checks": {"release_integrity": {"files": checked_files, "all_hashes_match": True}},
     }
 
     # Import the existing loader, without entering its training CLI.
@@ -83,6 +88,7 @@ def main():
     rows = pd.read_csv(source / "principal/heldout_per_location.csv").sort_values("row_index")
     require(np.array_equal(rows.row_index.to_numpy(), np.arange(16581)), "Principal row indices differ")
     require(np.array_equal(rows.loc_id.to_numpy(), inputs["loc_id"]), "Principal location order differs")
+    require(np.array_equal(rows.class_idx.to_numpy(), inputs["class_idx"]), "Principal crop labels differ")
     folds, max_error, labels_changed = [], 0.0, 0
     reference_predictions = np.empty(len(rows), dtype=int)
     correction_predictions = np.empty(len(rows), dtype=int)
@@ -104,10 +110,15 @@ def main():
             require(error < 1e-10, f"Fold {k} saved spectra differ: {error}")
             max_error = max(max_error, error)
         expected = rows.iloc[test]
+        require(np.all(expected.fold.to_numpy() == k), f"Fold {k} row assignments differ")
         require(np.array_equal(pred.committed.astype(int), expected.logistic_partial__commit), f"Fold {k} adoption differs")
         rmse = np.sqrt(np.mean((pred.spectra - inputs["y"][test]) ** 2, axis=1))
         require(np.allclose(rmse, expected.logistic_partial__rmse, atol=1e-10, rtol=0), f"Fold {k} RMSE differs")
         returned_labels = model.probabilities(pred.spectra).argmax(axis=1)
+        require(np.array_equal(pred.annotation_index, expected.logistic_global__pred),
+                f"Fold {k} global classifier predictions differ")
+        require(np.array_equal(returned_labels, expected.logistic_partial__pred),
+                f"Fold {k} returned classifier predictions differ")
         labels_changed += int(np.sum(returned_labels != pred.annotation_index))
         reference_predictions[test] = model.probabilities(inputs["y"][test]).argmax(axis=1)
         correction_predictions[test] = model.probabilities(pred.candidate).argmax(axis=1)
@@ -195,6 +206,9 @@ def main():
     for name in ("single_split_identity_and_validation", "original_state_replay_and_cells",
                  "R8_selector_search_and_bootstrap_verified", "R5_geographic_records_verified"):
         report["checks"][name] = load_json(supplement / f"{name}.json")
+    command("supplement_diagnostics", [ROOT / "supplement/verify_saved_diagnostics.py",
+                                      "--replay-dir", supplement])
+    report["checks"]["supplement_diagnostics"] = load_json(supplement / "saved_diagnostics_verified.json")
     command("S11", [ROOT / "supplement/recompute_s11.py", "--out", supplement])
     actual = load_json(supplement / "S11_seed20261018.json")["conditions"]
     expected = load_json(ROOT / "supplement/expected/S11_seed20261018.json")["conditions"]

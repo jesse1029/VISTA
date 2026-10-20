@@ -1,5 +1,5 @@
 {
-  "started_utc": "2026-10-20T12:18:34.103060+00:00",
+  "started_utc": "2026-10-20T13:57:09.265470+00:00",
   "python": "3.12.14",
   "numpy": "1.26.4",
   "pandas": "2.3.3",
@@ -12,6 +12,10 @@
   },
   "model_fitting_performed": false,
   "checks": {
+    "release_integrity": {
+      "files": 166,
+      "all_hashes_match": true
+    },
     "principal_model_replay": {
       "rows": 16581,
       "folds": [
@@ -209,7 +213,7 @@
       "fits_run": false
     },
     "original_state_replay_and_cells": {
-      "completed_utc": "2026-10-20T12:19:00.206423+00:00",
+      "completed_utc": "2026-10-20T13:57:35.700237+00:00",
       "single_split_2021": {
         "groups": {
           "all": {
@@ -452,6 +456,29 @@
       "original_directional_models_not_serialized_by_runner": true,
       "fitting_run": false
     },
+    "supplement_diagnostics": {
+      "status": "PASS",
+      "single_split_outputs": 5,
+      "S8_gate_variants": 4,
+      "single_split_rows": 3884,
+      "wavelengths_checked_per_year": 59,
+      "years": [
+        2021,
+        2020
+      ],
+      "geographic_saved_rows": {
+        "east_to_west": {
+          "rows": 7642,
+          "large_error_rows": 287
+        },
+        "west_to_east": {
+          "rows": 7765,
+          "large_error_rows": 335
+        }
+      },
+      "2020_wavelength_scope": "VISTA returned spectra; separate diagonal baseline state unavailable",
+      "fitting_performed": false
+    },
     "S11": {
       "seed": 20261018,
       "draws": 5000,
@@ -464,5 +491,5 @@
     }
   },
   "status": "PASS",
-  "completed_utc": "2026-10-20T12:19:02.132137+00:00"
+  "completed_utc": "2026-10-20T13:57:40.070732+00:00"
 }

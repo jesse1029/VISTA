@@ -1,0 +1,23 @@
+{
+  "accepted_rows": 2747,
+  "diagnostic_csv_sha256": "7d70c4853192ad38e7046f43afff33b04b01bd367c60ce849afa1eb5908682b9",
+  "final_rows": 3884,
+  "inputs_sha256": {
+    "FINAL_DECISION_LOCK.json": "df8ef02e0bb3150935360562284317b20e2a13dee8650553b1455c6af2086046",
+    "development_models.pkl": "14366c783a6562eabacdba73ae09f9f5899b1c01828df15e8f66df2febb81c0d",
+    "diagnostic_script": "9f72de56ecd83f9c0e23b92f19c7ddc070fb692d1a76a03c0af9597681ab3ee0",
+    "final_per_location.csv": "16077dc2e532bad212537ebebe8f8dd2a515523dbe7f38865a98710b5a97a929",
+    "runner": "3a14e29f063f5809d941f4b202483bb017345475164c6c10a6eba90cffd770f1"
+  },
+  "margin": 0.0,
+  "max_reconstruction_rmse_error": {
+    "global": 1.7763568394002505e-15,
+    "smst": 1.7763568394002505e-15
+  },
+  "model_key": "g=1e-02|d=1e-01|r=1e-04",
+  "schema": "smst-r4-posthoc-wavelength-diagnostics-v1",
+  "scope": "Post-R4 descriptive reconstruction of the locked final outputs; no refit, reselection, or additional primary test.",
+  "wavelength_count": 59,
+  "wavelength_max_nm": 1000.0,
+  "wavelength_min_nm": 410.0
+}

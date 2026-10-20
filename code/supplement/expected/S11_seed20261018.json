@@ -1,0 +1,55 @@
+{
+  "status": "OPTIONAL_REANALYSIS_CANDIDATE_NOT_APPLIED_TO_MANUSCRIPT",
+  "seed": 20261018,
+  "replicates": 5000,
+  "numpy_version": "1.26.4",
+  "draw_rule": "Reset default_rng(seed) per condition; sort occupied L-cell strings lexicographically; sample same number of cells with replacement; retain all L rows in each drawn cell; compute retained-minus-pruned within every draw",
+  "historical_seed_recovered": false,
+  "new_model_fitting": false,
+  "conditions": {
+    "single_split_2021": {
+      "rows_in_L": 3582,
+      "cells_in_L": 107,
+      "retained_rows": 2747,
+      "pruned_rows": 835,
+      "valid_replicates": 5000,
+      "source_sha256": "f3443f09a84bdd1a444c2cb16acfbd94116ca317b1e360af49a392c08f1305da",
+      "retained_minus_pruned_delta_rmse": {
+        "point": -0.06237815387638614,
+        "ci95": [
+          -0.10557650083443962,
+          -0.023174717258094443
+        ]
+      },
+      "retained_minus_pruned_tail_rate_percentage_points": {
+        "point": 2.1810619750669757,
+        "ci95": [
+          -0.723699627147115,
+          4.887905482900927
+        ]
+      }
+    },
+    "frozen_2020": {
+      "rows_in_L": 981,
+      "cells_in_L": 216,
+      "retained_rows": 450,
+      "pruned_rows": 531,
+      "valid_replicates": 5000,
+      "source_sha256": "22875a930f045e21276996b08f6ffdcaed87dc43f5cbf8b5e48e941e9a74c006",
+      "retained_minus_pruned_delta_rmse": {
+        "point": -0.7068394688097452,
+        "ci95": [
+          -0.8264339478313801,
+          -0.5897542117777512
+        ]
+      },
+      "retained_minus_pruned_tail_rate_percentage_points": {
+        "point": -41.145009416195855,
+        "ci95": [
+          -49.89019808213109,
+          -32.671019860645615
+        ]
+      }
+    }
+  }
+}

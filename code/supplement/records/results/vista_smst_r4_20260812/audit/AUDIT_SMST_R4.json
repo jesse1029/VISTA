@@ -1,0 +1,21 @@
+{
+  "bindings": {
+    "decision": "df8ef02e0bb3150935360562284317b20e2a13dee8650553b1455c6af2086046",
+    "development_models": "14366c783a6562eabacdba73ae09f9f5899b1c01828df15e8f66df2febb81c0d",
+    "final_per_location": "16077dc2e532bad212537ebebe8f8dd2a515523dbe7f38865a98710b5a97a929",
+    "final_summary": "36877383a27457d0534c856e3b0e046c2bd74fc7e304fe8cf2e1ebf957a2755a",
+    "prereg": "7618c6c5859cf43e84a7a158121c02872bb519c8d548331012d1c1c6a18ae04a",
+    "runner": "3a14e29f063f5809d941f4b202483bb017345475164c6c10a6eba90cffd770f1"
+  },
+  "boundary": "PASS validates experiment integrity and the frozen-decoder top-label gate. It does not certify true material state, population risk, or external generalization.",
+  "checks": {
+    "committed_label_preservation": true,
+    "coverage": 0.7072605561277034,
+    "final_rows": 3884,
+    "spectral_harms": 129,
+    "union_harms": 129
+  },
+  "failures": [],
+  "schema": "smst-r4-audit-v1",
+  "status": "PASS"
+}

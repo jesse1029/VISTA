@@ -1,0 +1,221 @@
+{
+  "bindings": {
+    "inputs": {
+      "desis_2021.csv": "85ac21e38fb990a75714f90be0d2ced643275adf4e46570f326e765709c48ccc",
+      "desis_prisma_2021_paper_reconciled.xml": "1453cf193438e59ad61d4cdde2eb4c089c1c28c843517585f7eb47c0f4e5aa46",
+      "prisma_2021.csv": "0c6ef3dff0e5eff1c3e9ebb349494465d4459ee189c2aeb089af4e7622822647"
+    },
+    "preregistration_sha256": "d34404d2cb78e056d58d09c7d13d45e4753062eba7a2a71875860c87ea4aa8c1",
+    "r4_runner_sha256": "3a14e29f063f5809d941f4b202483bb017345475164c6c10a6eba90cffd770f1",
+    "runner_sha256": "1eefb78f37886c08930b2eeb1c1a958961f14e12d45ae8f6ca290c9aac8292b1"
+  },
+  "claim_boundary": "Same-release west/east geographic stress test after R4. It is not an independent dataset, a second sensor-pair evaluation, or a population-risk certificate.",
+  "created_at": "2026-08-11T17:20:54.265746+00:00",
+  "directions": {
+    "east_to_west": {
+      "metrics": {
+        "global_ridge": {
+          "accuracy": 0.8212509814184769,
+          "macro_f1": 0.6411065844229091,
+          "per_class_f1": {
+            "alfalfa": 0.7682926829268293,
+            "almonds": 0.8547008547008547,
+            "corn": 0.0,
+            "grapes": 0.825974025974026,
+            "pistachios": 0.7565653585128357
+          },
+          "rmse": 1.8477888807740144,
+          "sam_rad": 0.05449760761736898
+        },
+        "identity": {
+          "accuracy": 0.018319811567652448,
+          "macro_f1": 0.020108012047652744,
+          "per_class_f1": {
+            "alfalfa": 0.0,
+            "almonds": 0.0,
+            "corn": 0.020031628887717447,
+            "grapes": 0.014934660858743,
+            "pistachios": 0.06557377049180328
+          },
+          "rmse": 2.820754132337182,
+          "sam_rad": 0.09532215353710413
+        },
+        "smst": {
+          "accuracy": 0.8212509814184769,
+          "macro_f1": 0.6411065844229091,
+          "per_class_f1": {
+            "alfalfa": 0.7682926829268293,
+            "almonds": 0.8547008547008547,
+            "corn": 0.0,
+            "grapes": 0.825974025974026,
+            "pistachios": 0.7565653585128357
+          },
+          "rmse": 1.8349888922329605,
+          "sam_rad": 0.05190826618705525
+        },
+        "true_label_oracle_diagnostic": {
+          "accuracy": 0.9043444124574719,
+          "macro_f1": 0.8479916221561175,
+          "per_class_f1": {
+            "alfalfa": 0.8187134502923976,
+            "almonds": 0.9208684304187923,
+            "corn": 0.7226890756302521,
+            "grapes": 0.8836662749706228,
+            "pistachios": 0.8940208794685226
+          },
+          "rmse": 1.8918902283462147,
+          "sam_rad": 0.04994304121231066
+        },
+        "unconstrained_semantic": {
+          "accuracy": 0.860376864695106,
+          "macro_f1": 0.6865865154629737,
+          "per_class_f1": {
+            "alfalfa": 0.8070175438596491,
+            "almonds": 0.8922788077915982,
+            "corn": 0.0759493670886076,
+            "grapes": 0.8464264619019493,
+            "pistachios": 0.8112603966730646
+          },
+          "rmse": 1.8456673086211983,
+          "sam_rad": 0.049001439891703934
+        }
+      },
+      "paired_vs_global": {
+        "correct_to_incorrect_vs_global": 0,
+        "coverage": 0.7490185815231615,
+        "semantic_label_changes_after_gate": 0,
+        "semantic_label_changes_before_gate": 650,
+        "smst_minus_global_macro_f1": 0.0,
+        "smst_minus_global_rmse": -0.012799988541053908,
+        "smst_minus_global_sam_rad": -0.002589341430313731,
+        "spectral_harms_vs_global": 287
+      },
+      "test_class_counts": {
+        "alfalfa": 100,
+        "almonds": 4403,
+        "corn": 76,
+        "grapes": 1577,
+        "pistachios": 1486
+      },
+      "test_rows": 7642,
+      "train_class_counts": {
+        "alfalfa": 113,
+        "almonds": 3938,
+        "corn": 24,
+        "grapes": 3504,
+        "pistachios": 186
+      },
+      "train_rows": 7765
+    },
+    "west_to_east": {
+      "metrics": {
+        "global_ridge": {
+          "accuracy": 0.8169993560849967,
+          "macro_f1": 0.48798894386866126,
+          "per_class_f1": {
+            "alfalfa": 0.25,
+            "almonds": 0.8367346938775511,
+            "corn": 0.35555555555555557,
+            "grapes": 0.830987803243533,
+            "pistachios": 0.16666666666666666
+          },
+          "rmse": 2.0477619771193583,
+          "sam_rad": 0.04959764818364998
+        },
+        "identity": {
+          "accuracy": 0.00309079201545396,
+          "macro_f1": 0.0012325073822056745,
+          "per_class_f1": {
+            "alfalfa": 0.0,
+            "almonds": 0.0,
+            "corn": 0.006162536911028373,
+            "grapes": 0.0,
+            "pistachios": 0.0
+          },
+          "rmse": 3.1785069701540167,
+          "sam_rad": 0.09575479845447027
+        },
+        "smst": {
+          "accuracy": 0.8169993560849967,
+          "macro_f1": 0.48798894386866126,
+          "per_class_f1": {
+            "alfalfa": 0.25,
+            "almonds": 0.8367346938775511,
+            "corn": 0.35555555555555557,
+            "grapes": 0.830987803243533,
+            "pistachios": 0.16666666666666666
+          },
+          "rmse": 2.015291705577712,
+          "sam_rad": 0.04843215455081883
+        },
+        "true_label_oracle_diagnostic": {
+          "accuracy": 0.9313586606567933,
+          "macro_f1": 0.588391426866993,
+          "per_class_f1": {
+            "alfalfa": 0.04560260586319218,
+            "almonds": 0.9697508896797153,
+            "corn": 0.08695652173913043,
+            "grapes": 0.9339867396944365,
+            "pistachios": 0.9056603773584906
+          },
+          "rmse": 1.9917721058972997,
+          "sam_rad": 0.04796673521040847
+        },
+        "unconstrained_semantic": {
+          "accuracy": 0.7784932388924662,
+          "macro_f1": 0.40745720832340043,
+          "per_class_f1": {
+            "alfalfa": 0.1794871794871795,
+            "almonds": 0.8128,
+            "corn": 0.05128205128205128,
+            "grapes": 0.7911851652781511,
+            "pistachios": 0.20253164556962025
+          },
+          "rmse": 2.010427333539191,
+          "sam_rad": 0.047358033930372134
+        }
+      },
+      "paired_vs_global": {
+        "correct_to_incorrect_vs_global": 0,
+        "coverage": 0.5949774629748873,
+        "semantic_label_changes_after_gate": 0,
+        "semantic_label_changes_before_gate": 496,
+        "smst_minus_global_macro_f1": 0.0,
+        "smst_minus_global_rmse": -0.032470271541646056,
+        "smst_minus_global_sam_rad": -0.0011654936328311452,
+        "spectral_harms_vs_global": 335
+      },
+      "test_class_counts": {
+        "alfalfa": 113,
+        "almonds": 3938,
+        "corn": 24,
+        "grapes": 3504,
+        "pistachios": 186
+      },
+      "test_rows": 7765,
+      "train_class_counts": {
+        "alfalfa": 100,
+        "almonds": 4403,
+        "corn": 76,
+        "grapes": 1577,
+        "pistachios": 1486
+      },
+      "train_rows": 7642
+    }
+  },
+  "fixed_configuration": {
+    "decoder_alpha": 0.1,
+    "global_alpha": 0.01,
+    "margin": 0.0,
+    "residual_alpha": 0.0001
+  },
+  "geography": {
+    "east_rows": 7765,
+    "excluded_rows": 1174,
+    "gap_degrees": 0.01,
+    "longitude_threshold": -120.2425085,
+    "west_rows": 7642
+  },
+  "schema": "smst-r5-regional-v1",
+  "status": "COMPLETE_POST_R4_SECONDARY_STRESS_TEST"
+}

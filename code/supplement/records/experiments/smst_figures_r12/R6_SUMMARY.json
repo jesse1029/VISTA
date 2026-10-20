@@ -1,0 +1,81 @@
+{
+  "claim_boundary": "Post-R4 component characterization on the once-opened R4 final split. It is not a new primary test, independent replication, or safety certificate.",
+  "final_rows": 3884,
+  "global": {
+    "accuracy": 0.86302780638517,
+    "macro_f1": 0.6321969183356813,
+    "per_class_f1": {
+      "alfalfa": 0.2905982905982906,
+      "almonds": 0.8923076923076924,
+      "corn": 0.2631578947368421,
+      "grapes": 0.8510463684858433,
+      "pistachios": 0.8638743455497382
+    },
+    "rmse": 1.595299846814343,
+    "sam_rad": 0.03905317054293171
+  },
+  "r4_decision_lock_sha256": "df8ef02e0bb3150935360562284317b20e2a13dee8650553b1455c6af2086046",
+  "r4_preregistration_sha256": "7618c6c5859cf43e84a7a158121c02872bb519c8d548331012d1c1c6a18ae04a",
+  "r4_runner_sha256": "3a14e29f063f5809d941f4b202483bb017345475164c6c10a6eba90cffd770f1",
+  "schema": "smst-r6-fixed-gate-components-v1",
+  "selected_margin": 0.0,
+  "selected_model_key": "g=1e-02|d=1e-01|r=1e-04",
+  "variants": {
+    "both": {
+      "accuracy": 0.86302780638517,
+      "component_union_harms_vs_global": 129,
+      "correct_to_incorrect_vs_global": 0,
+      "coverage": 0.7072605561277034,
+      "delta_macro_f1_vs_global": 0.0,
+      "delta_rmse_vs_global": -0.054526812076786335,
+      "delta_sam_rad_vs_global": -0.002672825409061594,
+      "frozen_decoder_label_changes_vs_global": 0,
+      "macro_f1": 0.6321969183356813,
+      "rmse": 1.5407730347375566,
+      "sam_rad": 0.03638034513387012,
+      "spectral_harms_vs_global": 129
+    },
+    "label_only": {
+      "accuracy": 0.86302780638517,
+      "component_union_harms_vs_global": 150,
+      "correct_to_incorrect_vs_global": 0,
+      "coverage": 0.9222451081359423,
+      "delta_macro_f1_vs_global": 0.0,
+      "delta_rmse_vs_global": -0.05769087671836659,
+      "delta_sam_rad_vs_global": -0.002801205190504176,
+      "frozen_decoder_label_changes_vs_global": 0,
+      "macro_f1": 0.6321969183356813,
+      "rmse": 1.5376089700959763,
+      "sam_rad": 0.036251965352427536,
+      "spectral_harms_vs_global": 150
+    },
+    "margin_only": {
+      "accuracy": 0.8627703398558187,
+      "component_union_harms_vs_global": 228,
+      "correct_to_incorrect_vs_global": 83,
+      "coverage": 0.7536045314109165,
+      "delta_macro_f1_vs_global": -0.0042139483245383635,
+      "delta_rmse_vs_global": -0.05755116274831362,
+      "delta_sam_rad_vs_global": -0.0028381648530986653,
+      "frozen_decoder_label_changes_vs_global": 180,
+      "macro_f1": 0.6279829700111429,
+      "rmse": 1.5377486840660293,
+      "sam_rad": 0.036215005689833046,
+      "spectral_harms_vs_global": 153
+    },
+    "unconstrained": {
+      "accuracy": 0.857621009268795,
+      "component_union_harms_vs_global": 324,
+      "correct_to_incorrect_vs_global": 151,
+      "coverage": 1.0,
+      "delta_macro_f1_vs_global": -0.0043106178237690695,
+      "delta_rmse_vs_global": -0.061603525820643545,
+      "delta_sam_rad_vs_global": -0.0030268570058958263,
+      "frozen_decoder_label_changes_vs_global": 302,
+      "macro_f1": 0.6278863005119122,
+      "rmse": 1.5336963209936993,
+      "sam_rad": 0.036026313537035885,
+      "spectral_harms_vs_global": 183
+    }
+  }
+}

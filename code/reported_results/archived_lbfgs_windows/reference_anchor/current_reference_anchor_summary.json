@@ -1,0 +1,83 @@
+{
+  "cropwise": {
+    "alfalfa": {
+      "candidate_label_changes": 46,
+      "candidate_reference_agreement": 0.46726190476190477,
+      "changes_away_from_reference": 31,
+      "changes_between_other_labels": 8,
+      "changes_toward_reference": 7,
+      "fallback_reference_agreement": 0.5386904761904762,
+      "n": 336,
+      "reference_accuracy": 0.7053571428571429,
+      "reference_macro_f1": 0.16544502617801046,
+      "returned_reference_agreement": 0.5386904761904762
+    },
+    "almonds": {
+      "candidate_label_changes": 316,
+      "candidate_reference_agreement": 0.8740458015267175,
+      "changes_away_from_reference": 167,
+      "changes_between_other_labels": 27,
+      "changes_toward_reference": 122,
+      "fallback_reference_agreement": 0.8792505204718946,
+      "n": 8646,
+      "reference_accuracy": 0.8965995836224844,
+      "reference_macro_f1": 0.18909623124771313,
+      "returned_reference_agreement": 0.8792505204718946
+    },
+    "corn": {
+      "candidate_label_changes": 39,
+      "candidate_reference_agreement": 0.16097560975609757,
+      "changes_away_from_reference": 1,
+      "changes_between_other_labels": 36,
+      "changes_toward_reference": 2,
+      "fallback_reference_agreement": 0.15609756097560976,
+      "n": 205,
+      "reference_accuracy": 0.848780487804878,
+      "reference_macro_f1": 0.18364116094986807,
+      "returned_reference_agreement": 0.15609756097560976
+    },
+    "grapes": {
+      "candidate_label_changes": 344,
+      "candidate_reference_agreement": 0.762619628448114,
+      "changes_away_from_reference": 168,
+      "changes_between_other_labels": 50,
+      "changes_toward_reference": 126,
+      "fallback_reference_agreement": 0.770501032088572,
+      "n": 5329,
+      "reference_accuracy": 0.7609307562394445,
+      "reference_macro_f1": 0.172847399829497,
+      "returned_reference_agreement": 0.770501032088572
+    },
+    "pistachios": {
+      "candidate_label_changes": 69,
+      "candidate_reference_agreement": 0.29249394673123486,
+      "changes_away_from_reference": 5,
+      "changes_between_other_labels": 22,
+      "changes_toward_reference": 42,
+      "fallback_reference_agreement": 0.2745762711864407,
+      "n": 2065,
+      "reference_accuracy": 0.960774818401937,
+      "reference_macro_f1": 0.19599901210175352,
+      "returned_reference_agreement": 0.2745762711864407
+    }
+  },
+  "inputs": {
+    "desis": "C:\\Users\\User\\Documents\\Codex\\2026-09-22\\vista-tgrs-review-loop\\work\\evidence\\usgs_2021\\desis_2021.csv",
+    "desis_sha256": "85ac21e38fb990a75714f90be0d2ced643275adf4e46570f326e765709c48ccc",
+    "prisma": "C:\\Users\\User\\Documents\\Codex\\2026-09-22\\vista-tgrs-review-loop\\work\\evidence\\usgs_2021\\prisma_2021.csv",
+    "prisma_sha256": "0c6ef3dff0e5eff1c3e9ebb349494465d4459ee189c2aeb089af4e7622822647"
+  },
+  "overall": {
+    "candidate_label_changes": 814,
+    "candidate_reference_agreement": 0.7487485676376575,
+    "changes_away_from_reference": 372,
+    "changes_between_other_labels": 143,
+    "changes_toward_reference": 299,
+    "fallback_reference_agreement": 0.7531511971533683,
+    "n": 16581,
+    "reference_accuracy": 0.8565225257825222,
+    "reference_macro_f1": 0.7785334381941802,
+    "returned_reference_agreement": 0.7531511971533683
+  },
+  "protocol": "current five-fold published fallback/decoder and logistic partial-family locks"
+}
